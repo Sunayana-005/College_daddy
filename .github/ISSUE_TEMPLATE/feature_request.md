@@ -7,7 +7,7 @@ assignees: ""
 ---
 
 ### Description
-Explain clearly what feature or improvement you’re suggesting and why it’s needed.
+Explain clearly what feature or improvement you're suggesting and why it's needed.
 
 ### Problem
 What problem or limitation does this solve?
@@ -19,6 +19,7 @@ How would you like this feature to work? (Be specific — include UI or function
 Add screenshots, sketches, or references if relevant.
 
 ### Checklist
-- [ ] I’ve checked this doesn’t already exist.
-- [ ] I’ve followed the contributing guidelines.
-- [ ] I’ve described the expected behavior clearly.
+- [ ] I've checked this doesn't already exist.
+- [ ] I've followed the contributing guidelines.
+- [ ] I've described the expected behavior clearly.
+
