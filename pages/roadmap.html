@@ -40,6 +40,17 @@
     <link rel="preload" href="../assets/css/roadmap.css" as="style">
     <link rel="preload" href="../assets/js/components/navigation.js" as="script">
     <link rel="preload" href="../assets/js/pages/roadmap.js" as="script">
+    <!-- Theme initialization script - runs before page render to prevent flash -->
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme') || 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
 </head>
 <body>
         <header>
@@ -48,7 +59,16 @@
                 <i class="fas fa-graduation-cap"></i>
                 <span>College Daddy</span>
             </a>
-            <button class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <div class="nav-actions">
+                <button
+                    class="theme-toggle"
+                    aria-label="Toggle dark/light theme"
+                    title="Toggle theme"
+                >
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
             <nav class="nav-links">
                 <a href="../index.html" class="nav-link">Home</a>
                 <a href="cgpa.html" class="nav-link">CGPA Calculator</a>

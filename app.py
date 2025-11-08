@@ -212,4 +212,4 @@ def serve_data(filename):
     return send_from_directory('data', filename)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='127.0.0.1', port=5001)
