@@ -51,6 +51,11 @@ def home():
     """Redirect to admin panel by default"""
     return redirect('/pages/admin.html')
 
+@app.route('/index.html')
+def index():
+    """Serve the main index.html page"""
+    return send_from_directory('.', 'index.html')
+
 @app.route('/api/admin/upload', methods=['POST'])
 def admin_upload():
     semester_id = request.form.get('semester')
@@ -119,25 +124,29 @@ def admin_upload():
     # Update JSON
     rel_path = '/' + file_path.replace('\\', '/').replace(os.path.sep, '/')
     
-    # Check for duplicates before adding
+    # Check for duplicates before adding (use set for O(1) lookup instead of O(n))
     rel_path_alt = f"..{rel_path[1:]}"
-    existing_paths = [m['path'] for m in subject.get('materials', [])]
+    existing_paths = {m['path'] for m in subject.get('materials', [])}
     if rel_path in existing_paths or rel_path_alt in existing_paths:
         return jsonify({'success': True, 'message': 'File already exists in database'}), 200
+    
+    # Get file size (fast operation, but do it before JSON write)
+    file_size_kb = os.path.getsize(file_path) // 1024
     
     material = {
         'title': title,
         'description': description,
         'path': rel_path,
         'type': 'pdf',
-        'size': f"{os.path.getsize(file_path) // 1024}KB",
+        'size': f"{file_size_kb}KB",
         'uploadDate': datetime.now().strftime('%Y-%m-%d'),
         'downloadUrl': f"/api/download?path={rel_path}"
     }
     subject.setdefault('materials', []).append(material)
 
+    # Write JSON without indentation for faster writes (compact JSON)
     with open(NOTES_JSON, 'w', encoding='utf-8') as f:
-        json.dump(notes_data, f, indent=2, ensure_ascii=False)
+        json.dump(notes_data, f, ensure_ascii=False, separators=(',', ':'))
 
     return jsonify({
         'success': True, 
@@ -205,9 +214,9 @@ def delete_material():
             os.remove(pdf_file_path)
             logger.info(f"PDF file deleted: {pdf_file_path}")
         
-        # Update JSON
+        # Update JSON (use compact format for faster writes)
         with open(NOTES_JSON, 'w', encoding='utf-8') as f:
-            json.dump(notes_data, f, indent=2, ensure_ascii=False)
+            json.dump(notes_data, f, ensure_ascii=False, separators=(',', ':'))
         
         return jsonify({'success': True, 'message': 'Material deleted successfully'})
     
