@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, send_from_directory, render_template
+from flask import Flask, request, jsonify, send_from_directory, render_template, redirect
 from flask_cors import CORS
 import os
 import json
@@ -48,8 +48,8 @@ atexit.register(stop_file_watcher)
 
 @app.route('/')
 def home():
-    """Serve homepage (index.html)"""
-    return send_from_directory('.', 'index.html')
+    """Redirect to admin panel by default"""
+    return redirect('/pages/admin.html')
 
 @app.route('/api/admin/upload', methods=['POST'])
 def admin_upload():
