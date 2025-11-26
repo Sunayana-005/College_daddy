@@ -1,3 +1,13 @@
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+![GitHub Repo stars](https://img.shields.io/github/stars/mugenkyou/College_daddy?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/mugenkyou/College_daddy?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/mugenkyou/College_daddy?style=for-the-badge)
+
+
+
 # College Daddy
 
 College Daddy is a comprehensive academic tool designed to simplify student life. It provides essential calculators, study resources, and productivity tools to help students efficiently manage their academics. Originally developed during the end-semester exams, this project was created to address common student challenges like note-sharing, internal marks calculation, and study organization.

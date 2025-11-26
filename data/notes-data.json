@@ -34,13 +34,80 @@
                   "uploadDate": "2025-11-06",
                   "downloadUrl": "/api/download?path=/data/notes/semester-1/physics/physics/microcontroller_module_1___printed_notes__pdf_.pdf",
                   "thumbnailUrl": "/api/thumbnail?path=data/notes\\semester-1\\physics\\physics\\microcontroller_module_1___printed_notes__pdf_.pdf&format=png"
+                },
+                {
+                  "title": "Round_2_ML_Team_-_Email_Template",
+                  "description": "physics notes",
+                  "path": "../data/notes/semester-1/physics/physics/Round_2_ML_Team_-_Email_Template.pdf",
+                  "type": "pdf",
+                  "size": "132.76 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-1/physics/physics/Round_2_ML_Team_-_Email_Template.pdf",
+                  "keywords": [
+                    "physics"
+                  ]
                 }
               ]
             },
             {
               "id": "math101",
               "name": "MATHS",
-              "materials": []
+              "materials": [
+                {
+                  "title": "syllabus",
+                  "description": "syllabus",
+                  "path": "/data/notes/semester-1/physics/maths/MVJMATS11.pdf",
+                  "type": "pdf",
+                  "size": "235.79 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-1/physics/maths/MVJMATS11.pdf"
+                },
+                {
+                  "title": "MVJMATS11",
+                  "description": "maths notes",
+                  "path": "../data/notes/semester-1/physics/maths/MVJMATS11.pdf",
+                  "type": "pdf",
+                  "size": "235.79 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-1/physics/maths/MVJMATS11.pdf",
+                  "keywords": [
+                    "maths"
+                  ]
+                },
+                {
+                  "title": "1599_53_491_MODULE-3_AI___2_",
+                  "description": "maths notes",
+                  "path": "../data/notes/semester-1/physics/maths/1599_53_491_MODULE-3_AI___2_.pdf",
+                  "type": "pdf",
+                  "size": "1.08 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-1/physics/maths/1599_53_491_MODULE-3_AI___2_.pdf",
+                  "keywords": [
+                    "maths"
+                  ]
+                },
+                {
+                  "title": "round_2",
+                  "description": "maths notes",
+                  "path": "../data/notes/semester-1/physics/maths/round_2.pdf",
+                  "type": "pdf",
+                  "size": "62.86 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-1/physics/maths/round_2.pdf",
+                  "keywords": [
+                    "maths"
+                  ]
+                },
+                {
+                  "title": "syllabus",
+                  "description": "syllabus",
+                  "path": "/data/notes/semester-1/physics/maths/1599_53_491_MODULE-3_AI___2_.pdf",
+                  "type": "pdf",
+                  "size": "1.08 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-1/physics/maths/1599_53_491_MODULE-3_AI___2_.pdf"
+                }
+              ]
             },
             {
               "id": "lang101",
@@ -50,7 +117,32 @@
             {
               "id": "ee101",
               "name": "EE",
-              "materials": []
+              "materials": [
+                {
+                  "title": "1599_53_491_MODULE-3_AI___2_",
+                  "description": "ee notes",
+                  "path": "../data/notes/semester-1/physics/ee/1599_53_491_MODULE-3_AI___2_.pdf",
+                  "type": "pdf",
+                  "size": "1.08 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-1/physics/ee/1599_53_491_MODULE-3_AI___2_.pdf",
+                  "keywords": [
+                    "ee"
+                  ]
+                },
+                {
+                  "title": "MVJMATS11",
+                  "description": "ee notes",
+                  "path": "../data/notes/semester-1/physics/ee/MVJMATS11.pdf",
+                  "type": "pdf",
+                  "size": "235.79 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-1/physics/ee/MVJMATS11.pdf",
+                  "keywords": [
+                    "ee"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -123,7 +215,7 @@
                   "path": "/data/notes/semester-3/cse/operating-system/module-1.pdf",
                   "type": "pdf",
                   "size": "1.36 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/operating-system/module-1.pdf",
                   "keywords": [
                     "os",
@@ -136,7 +228,7 @@
                   "path": "/data/notes/semester-3/cse/operating-system/module_2.pdf",
                   "type": "pdf",
                   "size": "862.26 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/operating-system/module_2.pdf",
                   "keywords": [
                     "os",
@@ -149,7 +241,7 @@
                   "path": "/data/notes/semester-3/cse/operating-system/module_3.pdf",
                   "type": "pdf",
                   "size": "1.54 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/operating-system/module_3.pdf",
                   "keywords": [
                     "os",
@@ -162,7 +254,7 @@
                   "path": "/data/notes/semester-3/cse/operating-system/module_4.pdf",
                   "type": "pdf",
                   "size": "1.47 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/operating-system/module_4.pdf",
                   "keywords": [
                     "os",
@@ -175,7 +267,7 @@
                   "path": "/data/notes/semester-3/cse/operating-system/module_5.pdf",
                   "type": "pdf",
                   "size": "1.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/operating-system/module_5.pdf",
                   "keywords": [
                     "os",
@@ -188,7 +280,7 @@
                   "path": "../data/notes/semester-3/cse/operating-system/Module-1.pdf",
                   "type": "pdf",
                   "size": "1.36 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/operating-system/Module-1.pdf",
                   "keywords": [
                     "operating-system"
@@ -200,7 +292,7 @@
                   "path": "../data/notes/semester-3/cse/operating-system/module_2.pdf",
                   "type": "pdf",
                   "size": "862.26 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/operating-system/module_2.pdf",
                   "keywords": [
                     "operating-system"
@@ -212,7 +304,7 @@
                   "path": "../data/notes/semester-3/cse/operating-system/module_3.pdf",
                   "type": "pdf",
                   "size": "1.54 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/operating-system/module_3.pdf",
                   "keywords": [
                     "operating-system"
@@ -224,7 +316,7 @@
                   "path": "../data/notes/semester-3/cse/operating-system/module_4.pdf",
                   "type": "pdf",
                   "size": "1.47 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/operating-system/module_4.pdf",
                   "keywords": [
                     "operating-system"
@@ -236,7 +328,7 @@
                   "path": "../data/notes/semester-3/cse/operating-system/module_5.pdf",
                   "type": "pdf",
                   "size": "1.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/operating-system/module_5.pdf",
                   "keywords": [
                     "operating-system"
@@ -254,7 +346,7 @@
                   "path": "/data/notes/semester-3/cse/DDCO/m1.pdf",
                   "type": "pdf",
                   "size": "9.62 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/DDCO/m1.pdf",
                   "keywords": [
                     "ddco",
@@ -267,7 +359,7 @@
                   "path": "../data/notes/semester-3/cse/DDCO/m1.pdf",
                   "type": "pdf",
                   "size": "9.62 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/DDCO/m1.pdf",
                   "keywords": [
                     "ddco"
@@ -285,7 +377,7 @@
                   "path": "/data/notes/semester-3/cse/maths/module-1.pdf",
                   "type": "pdf",
                   "size": "8.16 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/maths/module-1.pdf",
                   "keywords": [
                     "maths",
@@ -298,7 +390,7 @@
                   "path": "/data/notes/semester-3/cse/maths/module_2.pdf",
                   "type": "pdf",
                   "size": "8.12 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/maths/module_2.pdf",
                   "keywords": [
                     "maths",
@@ -324,7 +416,7 @@
                   "path": "/data/notes/semester-3/cse/maths/module_4.pdf",
                   "type": "pdf",
                   "size": "3.22 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/maths/module_4.pdf",
                   "keywords": [
                     "maths",
@@ -337,7 +429,7 @@
                   "path": "/data/notes/semester-3/cse/maths/module_5.pdf",
                   "type": "pdf",
                   "size": "3.97 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/maths/module_5.pdf",
                   "keywords": [
                     "maths",
@@ -350,7 +442,7 @@
                   "path": "../data/notes/semester-3/cse/maths/Module-1.pdf",
                   "type": "pdf",
                   "size": "8.16 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/maths/Module-1.pdf",
                   "keywords": [
                     "maths"
@@ -362,7 +454,7 @@
                   "path": "../data/notes/semester-3/cse/maths/module_2.pdf",
                   "type": "pdf",
                   "size": "8.12 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/maths/module_2.pdf",
                   "keywords": [
                     "maths"
@@ -374,7 +466,7 @@
                   "path": "../data/notes/semester-3/cse/maths/module_4.pdf",
                   "type": "pdf",
                   "size": "3.22 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/maths/module_4.pdf",
                   "keywords": [
                     "maths"
@@ -386,7 +478,7 @@
                   "path": "../data/notes/semester-3/cse/maths/module_5.pdf",
                   "type": "pdf",
                   "size": "3.97 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/maths/module_5.pdf",
                   "keywords": [
                     "maths"
@@ -404,7 +496,7 @@
                   "path": "/data/notes/semester-3/cse/dsa/module-1.pdf",
                   "type": "pdf",
                   "size": "11.03 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/dsa/module-1.pdf",
                   "keywords": [
                     "dsa",
@@ -417,7 +509,7 @@
                   "path": "/data/notes/semester-3/cse/dsa/module_2.pdf",
                   "type": "pdf",
                   "size": "698.08 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/dsa/module_2.pdf",
                   "keywords": [
                     "dsa",
@@ -430,7 +522,7 @@
                   "path": "/data/notes/semester-3/cse/dsa/module-3.pdf",
                   "type": "pdf",
                   "size": "1.02 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/dsa/module-3.pdf",
                   "keywords": [
                     "dsa",
@@ -443,7 +535,7 @@
                   "path": "/data/notes/semester-3/cse/dsa/module_4.pdf",
                   "type": "pdf",
                   "size": "1.97 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/dsa/module_4.pdf",
                   "keywords": [
                     "dsa",
@@ -456,7 +548,7 @@
                   "path": "/data/notes/semester-3/cse/dsa/module_5.pdf",
                   "type": "pdf",
                   "size": "993.42 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/dsa/module_5.pdf",
                   "keywords": [
                     "dsa",
@@ -469,7 +561,7 @@
                   "path": "../data/notes/semester-3/cse/dsa/Module-1.pdf",
                   "type": "pdf",
                   "size": "11.03 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/dsa/Module-1.pdf",
                   "keywords": [
                     "dsa"
@@ -481,7 +573,7 @@
                   "path": "../data/notes/semester-3/cse/dsa/Module-3.pdf",
                   "type": "pdf",
                   "size": "1.02 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/dsa/Module-3.pdf",
                   "keywords": [
                     "dsa"
@@ -493,7 +585,7 @@
                   "path": "../data/notes/semester-3/cse/dsa/module_2.pdf",
                   "type": "pdf",
                   "size": "698.08 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/dsa/module_2.pdf",
                   "keywords": [
                     "dsa"
@@ -505,7 +597,7 @@
                   "path": "../data/notes/semester-3/cse/dsa/module_4.pdf",
                   "type": "pdf",
                   "size": "1.97 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/dsa/module_4.pdf",
                   "keywords": [
                     "dsa"
@@ -517,7 +609,7 @@
                   "path": "../data/notes/semester-3/cse/dsa/module_5.pdf",
                   "type": "pdf",
                   "size": "993.42 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/dsa/module_5.pdf",
                   "keywords": [
                     "dsa"
@@ -535,7 +627,7 @@
                   "path": "/data/notes/semester-3/cse/java/module-1.pdf",
                   "type": "pdf",
                   "size": "942.63 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/java/module-1.pdf",
                   "keywords": [
                     "java",
@@ -548,7 +640,7 @@
                   "path": "/data/notes/semester-3/cse/java/module_2.pdf",
                   "type": "pdf",
                   "size": "1.35 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/java/module_2.pdf",
                   "keywords": [
                     "java",
@@ -561,7 +653,7 @@
                   "path": "/data/notes/semester-3/cse/java/module-3.pdf",
                   "type": "pdf",
                   "size": "1.32 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/java/module-3.pdf",
                   "keywords": [
                     "java",
@@ -574,7 +666,7 @@
                   "path": "/data/notes/semester-3/cse/java/module_4.pdf",
                   "type": "pdf",
                   "size": "134.99 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/java/module_4.pdf",
                   "keywords": [
                     "java",
@@ -587,7 +679,7 @@
                   "path": "/data/notes/semester-3/cse/java/module_5.pdf",
                   "type": "pdf",
                   "size": "5.53 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/java/module_5.pdf",
                   "keywords": [
                     "java",
@@ -600,7 +692,7 @@
                   "path": "../data/notes/semester-3/cse/java/Module-1.pdf",
                   "type": "pdf",
                   "size": "942.63 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/java/Module-1.pdf",
                   "keywords": [
                     "java"
@@ -612,7 +704,7 @@
                   "path": "../data/notes/semester-3/cse/java/Module-3.pdf",
                   "type": "pdf",
                   "size": "1.32 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/java/Module-3.pdf",
                   "keywords": [
                     "java"
@@ -624,7 +716,7 @@
                   "path": "../data/notes/semester-3/cse/java/module_2.pdf",
                   "type": "pdf",
                   "size": "1.35 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/java/module_2.pdf",
                   "keywords": [
                     "java"
@@ -636,7 +728,7 @@
                   "path": "../data/notes/semester-3/cse/java/module_4.pdf",
                   "type": "pdf",
                   "size": "134.99 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/java/module_4.pdf",
                   "keywords": [
                     "java"
@@ -648,7 +740,7 @@
                   "path": "../data/notes/semester-3/cse/java/module_5.pdf",
                   "type": "pdf",
                   "size": "5.53 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/java/module_5.pdf",
                   "keywords": [
                     "java"
@@ -666,7 +758,7 @@
                   "path": "/data/notes/semester-3/cse/question/q1.pdf",
                   "type": "pdf",
                   "size": "10.98 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/question/q1.pdf",
                   "keywords": [
                     "pyq",
@@ -679,7 +771,7 @@
                   "path": "../data/notes/semester-3/cse/question/q1.pdf",
                   "type": "pdf",
                   "size": "10.98 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/question/q1.pdf",
                   "keywords": [
                     "question"
@@ -697,7 +789,7 @@
                   "path": "/data/notes/semester-3/cse/Manuals/DSALAB.pdf",
                   "type": "pdf",
                   "size": "498.4 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/Manuals/DSALAB.pdf",
                   "keywords": [
                     "dsa",
@@ -710,7 +802,7 @@
                   "path": "/data/notes/semester-3/cse/Manuals/OSLAB.pdf",
                   "type": "pdf",
                   "size": "527.56 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/Manuals/OSLAB.pdf",
                   "keywords": [
                     "os",
@@ -723,7 +815,7 @@
                   "path": "../data/notes/semester-3/cse/Manuals/DSALAB.pdf",
                   "type": "pdf",
                   "size": "498.4 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/Manuals/DSALAB.pdf",
                   "keywords": [
                     "lab manual"
@@ -735,7 +827,7 @@
                   "path": "../data/notes/semester-3/cse/Manuals/OSLAB.pdf",
                   "type": "pdf",
                   "size": "527.56 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/Manuals/OSLAB.pdf",
                   "keywords": [
                     "lab manual"
@@ -753,7 +845,7 @@
                   "path": "/data/notes/semester-3/cse/syllabus/syllabus.pdf",
                   "type": "pdf",
                   "size": "3.17 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-3/cse/syllabus/syllabus.pdf",
                   "keywords": [
                     "syllabus",
@@ -766,7 +858,7 @@
                   "path": "../data/notes/semester-3/cse/syllabus/syllabus.pdf",
                   "type": "pdf",
                   "size": "3.17 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-3/cse/syllabus/syllabus.pdf",
                   "keywords": [
                     "lab manual"
@@ -799,7 +891,7 @@
                   "directAccess": "/api/files?path=/data/notes/semester-4/cse/graph/graph-syllabus1.pdf",
                   "type": "pdf",
                   "size": "96.67 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph/graph-syllabus1.pdf",
                   "keywords": [
                     "graph theory",
@@ -813,7 +905,7 @@
                   "directAccess": "/api/files?path=/data/notes/semester-4/cse/graph-theory/Graph_theory_module_1.pdf",
                   "type": "pdf",
                   "size": "4.38 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/Graph_theory_module_1.pdf",
                   "keywords": [
                     "graph theory",
@@ -827,7 +919,7 @@
                   "directAccess": "/api/files?path=/data/notes/semester-4/cse/graph-theory/module_2.pdf",
                   "type": "pdf",
                   "size": "5.99 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/module_2.pdf",
                   "keywords": [
                     "graph theory",
@@ -840,7 +932,7 @@
                   "path": "/data/notes/semester-4/cse/graph-theory/mod_5_maths.pdf",
                   "type": "pdf",
                   "size": "4.44 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/mod_5_maths.pdf",
                   "keywords": [
                     "graph theory",
@@ -853,7 +945,7 @@
                   "path": "/data/notes/semester-4/cse/graph-theory/graph.pdf",
                   "type": "pdf",
                   "size": "540.83 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/graph.pdf",
                   "keywords": [
                     "graph theory",
@@ -866,7 +958,7 @@
                   "path": "/data/notes/semester-4/cse/graph-theory/Graph_theory_module_1.pdf",
                   "type": "pdf",
                   "size": "4.38 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/Graph_theory_module_1.pdf",
                   "keywords": [
                     "graph theory",
@@ -879,7 +971,7 @@
                   "path": "/data/notes/semester-4/cse/graph-theory/module_2.pdf",
                   "type": "pdf",
                   "size": "5.99 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/module_2.pdf",
                   "keywords": [
                     "graph theory",
@@ -892,7 +984,7 @@
                   "path": "/data/notes/semester-4/cse/graph-theory/Module_-_3_-Principle_of_counting_-_I.pdf",
                   "type": "pdf",
                   "size": "5.32 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/Module_-_3_-Principle_of_counting_-_I.pdf",
                   "keywords": [
                     "graph theory",
@@ -905,7 +997,7 @@
                   "path": "/data/notes/semester-4/cse/graph-theory/Module_-4_-_The_principle_of_inclusion_-_exclusion.pdf",
                   "type": "pdf",
                   "size": "4.82 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/Module_-4_-_The_principle_of_inclusion_-_exclusion.pdf",
                   "keywords": [
                     "graph theory",
@@ -918,7 +1010,7 @@
                   "path": "/data/notes/semester-4/cse/graph-theory/Graph_theory_-_module_5_notes.pdf",
                   "type": "pdf",
                   "size": "6.42 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/graph-theory/Graph_theory_-_module_5_notes.pdf",
                   "keywords": [
                     "graph theory",
@@ -931,7 +1023,7 @@
                   "path": "../data/notes/semester-4/cse/graph/graph-mod1.pdf",
                   "type": "pdf",
                   "size": "5.56 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph/graph-mod1.pdf",
                   "keywords": [
                     "mod 1"
@@ -943,7 +1035,7 @@
                   "path": "../data/notes/semester-4/cse/graph/graph-mod2.pdf",
                   "type": "pdf",
                   "size": "5.96 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph/graph-mod2.pdf",
                   "keywords": [
                     "mod 2"
@@ -955,7 +1047,7 @@
                   "path": "../data/notes/semester-4/cse/graph/graph-syllabus1.pdf",
                   "type": "pdf",
                   "size": "96.67 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph/graph-syllabus1.pdf",
                   "keywords": [
                     "lab manual"
@@ -967,7 +1059,7 @@
                   "path": "../data/notes/semester-4/cse/graph-theory/graph.pdf",
                   "type": "pdf",
                   "size": "540.83 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph-theory/graph.pdf",
                   "keywords": [
                     "graph-theory"
@@ -979,7 +1071,7 @@
                   "path": "../data/notes/semester-4/cse/graph-theory/Graph_theory_-_module_5_notes.pdf",
                   "type": "pdf",
                   "size": "6.42 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph-theory/Graph_theory_-_module_5_notes.pdf",
                   "keywords": [
                     "notes"
@@ -991,7 +1083,7 @@
                   "path": "../data/notes/semester-4/cse/graph-theory/Graph_theory_module_1.pdf",
                   "type": "pdf",
                   "size": "4.38 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph-theory/Graph_theory_module_1.pdf",
                   "keywords": [
                     "graph-theory"
@@ -1003,7 +1095,7 @@
                   "path": "../data/notes/semester-4/cse/graph-theory/Module_-4_-_The_principle_of_inclusion_-_exclusion.pdf",
                   "type": "pdf",
                   "size": "4.82 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph-theory/Module_-4_-_The_principle_of_inclusion_-_exclusion.pdf",
                   "keywords": [
                     "graph-theory"
@@ -1015,7 +1107,7 @@
                   "path": "../data/notes/semester-4/cse/graph-theory/Module_-_3_-Principle_of_counting_-_I.pdf",
                   "type": "pdf",
                   "size": "5.32 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph-theory/Module_-_3_-Principle_of_counting_-_I.pdf",
                   "keywords": [
                     "graph-theory"
@@ -1027,7 +1119,7 @@
                   "path": "../data/notes/semester-4/cse/graph-theory/module_2.pdf",
                   "type": "pdf",
                   "size": "5.99 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph-theory/module_2.pdf",
                   "keywords": [
                     "graph-theory"
@@ -1039,7 +1131,7 @@
                   "path": "../data/notes/semester-4/cse/graph-theory/mod_5_maths.pdf",
                   "type": "pdf",
                   "size": "4.44 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/graph-theory/mod_5_maths.pdf",
                   "keywords": [
                     "graph-theory"
@@ -1057,7 +1149,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ADA_mod-1ppt.pdf",
                   "type": "pdf",
                   "size": "1.96 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ADA_mod-1ppt.pdf",
                   "keywords": [
                     "ada",
@@ -1070,7 +1162,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ADA_mod-2ppt.pdf",
                   "type": "pdf",
                   "size": "3.08 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ADA_mod-2ppt.pdf",
                   "keywords": [
                     "ada",
@@ -1083,7 +1175,7 @@
                   "path": "/data/notes/semester-4/cse/ada/module-1.pdf",
                   "type": "pdf",
                   "size": "19.23 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/module-1.pdf",
                   "keywords": [
                     "ada",
@@ -1096,7 +1188,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ada-labmanual.pdf",
                   "type": "pdf",
                   "size": "528.77 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ada-labmanual.pdf",
                   "keywords": [
                     "ada",
@@ -1109,7 +1201,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ADAM1-PDF.pdf",
                   "type": "pdf",
                   "size": "1.4 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ADAM1-PDF.pdf",
                   "keywords": [
                     "ada",
@@ -1122,7 +1214,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ada-hadnwriteenm1.pdf",
                   "type": "pdf",
                   "size": "6.65 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ada-hadnwriteenm1.pdf",
                   "keywords": [
                     "ada",
@@ -1135,7 +1227,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ada-hadnwriteenm2.pdf",
                   "type": "pdf",
                   "size": "12.05 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ada-hadnwriteenm2.pdf",
                   "keywords": [
                     "ada",
@@ -1148,7 +1240,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ADA_4th_module_part_a.pdf",
                   "type": "pdf",
                   "size": "51.43 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ADA_4th_module_part_a.pdf",
                   "keywords": [
                     "ada",
@@ -1161,7 +1253,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ADA_4th_module_part_b.pdf",
                   "type": "pdf",
                   "size": "36.61 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ADA_4th_module_part_b.pdf",
                   "keywords": [
                     "ada",
@@ -1174,7 +1266,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ADA_5th_module.pdf",
                   "type": "pdf",
                   "size": "98.09 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ADA_5th_module.pdf",
                   "keywords": [
                     "ada",
@@ -1187,7 +1279,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ada.pdf",
                   "type": "pdf",
                   "size": "251.6 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ada.pdf",
                   "keywords": [
                     "ada",
@@ -1200,7 +1292,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ada_2024.doc",
                   "type": "pdf",
                   "size": "239.5 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ada_2024.doc",
                   "keywords": [
                     "ada",
@@ -1213,7 +1305,7 @@
                   "path": "/data/notes/semester-4/cse/ada/ada_2024.doc",
                   "type": "pdf",
                   "size": "239.5 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/ada_2024.doc",
                   "keywords": [
                     "ada",
@@ -1226,7 +1318,7 @@
                   "path": "/data/notes/semester-4/cse/ada/module-1.pdf",
                   "type": "pdf",
                   "size": "19.23 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/module-1.pdf",
                   "keywords": [
                     "ada",
@@ -1239,7 +1331,7 @@
                   "path": "/data/notes/semester-4/cse/ada/module-2-written.pdf",
                   "type": "pdf",
                   "size": "12.85 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/module-2-written.pdf",
                   "keywords": [
                     "ada",
@@ -1252,7 +1344,7 @@
                   "path": "/data/notes/semester-4/cse/ada/module-3-written.pdf",
                   "type": "pdf",
                   "size": "12.91 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/module-3-written.pdf",
                   "keywords": [
                     "ada",
@@ -1265,7 +1357,7 @@
                   "path": "/data/notes/semester-4/cse/ada/module-4-written.pdf",
                   "type": "pdf",
                   "size": "5.22 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/module-4-written.pdf",
                   "keywords": [
                     "ada",
@@ -1278,7 +1370,7 @@
                   "path": "/data/notes/semester-4/cse/ada/module-5-written.pdf",
                   "type": "pdf",
                   "size": "3.61 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/ada/module-5-written.pdf",
                   "keywords": [
                     "ada",
@@ -1291,7 +1383,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA 4th module part a.pdf",
                   "type": "pdf",
                   "size": "51.43 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA 4th module part a.pdf",
                   "keywords": [
                     "ada"
@@ -1303,7 +1395,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA 4th module part b.pdf",
                   "type": "pdf",
                   "size": "36.61 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA 4th module part b.pdf",
                   "keywords": [
                     "ada"
@@ -1315,7 +1407,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA 5th module.pdf",
                   "type": "pdf",
                   "size": "98.09 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA 5th module.pdf",
                   "keywords": [
                     "ada"
@@ -1327,7 +1419,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ada-hadnwriteenm1.pdf",
                   "type": "pdf",
                   "size": "6.65 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ada-hadnwriteenm1.pdf",
                   "keywords": [
                     "ada"
@@ -1339,7 +1431,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ada-hadnwriteenm2.pdf",
                   "type": "pdf",
                   "size": "12.05 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ada-hadnwriteenm2.pdf",
                   "keywords": [
                     "ada"
@@ -1351,7 +1443,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ada-labmanual.pdf",
                   "type": "pdf",
                   "size": "528.77 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ada-labmanual.pdf",
                   "keywords": [
                     "ada",
@@ -1364,7 +1456,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ada.pdf",
                   "type": "pdf",
                   "size": "251.6 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ada.pdf",
                   "keywords": [
                     "ada"
@@ -1376,7 +1468,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADAM1-PDF.pdf",
                   "type": "pdf",
                   "size": "1.4 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADAM1-PDF.pdf",
                   "keywords": [
                     "ada"
@@ -1388,7 +1480,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA_4th_module_part_a.pdf",
                   "type": "pdf",
                   "size": "51.43 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA_4th_module_part_a.pdf",
                   "keywords": [
                     "ada"
@@ -1400,7 +1492,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA_4th_module_part_b.pdf",
                   "type": "pdf",
                   "size": "36.61 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA_4th_module_part_b.pdf",
                   "keywords": [
                     "ada"
@@ -1412,7 +1504,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA_5th_module.pdf",
                   "type": "pdf",
                   "size": "98.09 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA_5th_module.pdf",
                   "keywords": [
                     "ada"
@@ -1424,7 +1516,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA_mod-1-handwritten.pdf",
                   "type": "pdf",
                   "size": "19.23 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA_mod-1-handwritten.pdf",
                   "keywords": [
                     "ada"
@@ -1436,7 +1528,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA_mod-1ppt.pdf",
                   "type": "pdf",
                   "size": "1.96 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA_mod-1ppt.pdf",
                   "keywords": [
                     "ada"
@@ -1448,7 +1540,7 @@
                   "path": "../data/notes/semester-4/cse/ada/ADA_mod-2ppt.pdf",
                   "type": "pdf",
                   "size": "3.08 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/ADA_mod-2ppt.pdf",
                   "keywords": [
                     "ada"
@@ -1460,7 +1552,7 @@
                   "path": "../data/notes/semester-4/cse/ada/module-1.pdf",
                   "type": "pdf",
                   "size": "19.23 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/module-1.pdf",
                   "keywords": [
                     "ada"
@@ -1472,7 +1564,7 @@
                   "path": "../data/notes/semester-4/cse/ada/module-2-written.pdf",
                   "type": "pdf",
                   "size": "12.85 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/module-2-written.pdf",
                   "keywords": [
                     "ada"
@@ -1484,7 +1576,7 @@
                   "path": "../data/notes/semester-4/cse/ada/module-3-written.pdf",
                   "type": "pdf",
                   "size": "12.91 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/module-3-written.pdf",
                   "keywords": [
                     "ada"
@@ -1496,7 +1588,7 @@
                   "path": "../data/notes/semester-4/cse/ada/module-4-written.pdf",
                   "type": "pdf",
                   "size": "5.22 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/module-4-written.pdf",
                   "keywords": [
                     "ada"
@@ -1508,7 +1600,7 @@
                   "path": "../data/notes/semester-4/cse/ada/module-5-written.pdf",
                   "type": "pdf",
                   "size": "3.61 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/ada/module-5-written.pdf",
                   "keywords": [
                     "ada"
@@ -1538,7 +1630,7 @@
                   "path": "../data/notes/semester-4/cse/BIO/bio_mod2.pdf",
                   "type": "pdf",
                   "size": "1.19 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/BIO/bio_mod2.pdf",
                   "keywords": [
                     "mod 2"
@@ -1555,7 +1647,7 @@
                   "description": "ia 1  2024 ",
                   "path": "/data/notes/semester-4/cse/pyq/IA1 PYQs (1).pdf",
                   "type": "pdf",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/pyq/IA1 PYQs (1).pdf",
                   "keywords": [
                     "pyq",
@@ -1569,7 +1661,7 @@
                   "path": "/data/notes/semester-4/cse/pyq/graph_2024.docx",
                   "type": "pdf",
                   "size": "266.22 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/pyq/graph_2024.docx",
                   "keywords": [
                     "pyq"
@@ -1581,7 +1673,7 @@
                   "path": "../data/notes/semester-4/cse/pyq/IA1 PYQs (1).pdf",
                   "type": "pdf",
                   "size": "4.46 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/pyq/IA1 PYQs (1).pdf",
                   "keywords": [
                     "pyq"
@@ -1599,7 +1691,7 @@
                   "subject": "microcontroller",
                   "path": "/data/notes/semester-4/cse/micro/Module 1.pdf",
                   "type": "pdf",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/micro/module 1.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1613,7 +1705,7 @@
                   "subject": "microcontroller",
                   "path": "/data/notes/semester-4/cse/micro/Module 2.pdf",
                   "type": "pdf",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/micro/module 2.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1627,7 +1719,7 @@
                   "path": "/data/notes/semester-4/cse/microcontroller/Micro_m2.pdf",
                   "type": "pdf",
                   "size": "1.4 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/microcontroller/Micro_m2.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1640,7 +1732,7 @@
                   "path": "/data/notes/semester-4/cse/microcontroller/Micro_M5.pdf",
                   "type": "pdf",
                   "size": "999.29 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/microcontroller/Micro_M5.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1653,7 +1745,7 @@
                   "path": "/data/notes/semester-4/cse/microcontroller/MC_module_1.pdf",
                   "type": "pdf",
                   "size": "1.17 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/microcontroller/MC_module_1.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1666,7 +1758,7 @@
                   "path": "/data/notes/semester-4/cse/microcontroller/MC_module_2.pdf",
                   "type": "pdf",
                   "size": "6.2 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/microcontroller/MC_module_2.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1679,7 +1771,7 @@
                   "path": "/data/notes/semester-4/cse/microcontroller/Module-3.pdf",
                   "type": "pdf",
                   "size": "477.19 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/microcontroller/Module-3.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1692,7 +1784,7 @@
                   "path": "/data/notes/semester-4/cse/microcontroller/MC_module_4.pdf",
                   "type": "pdf",
                   "size": "556.37 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/microcontroller/MC_module_4.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1705,7 +1797,7 @@
                   "path": "/data/notes/semester-4/cse/microcontroller/MC_module_5.pdf",
                   "type": "pdf",
                   "size": "999.29 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/microcontroller/MC_module_5.pdf",
                   "keywords": [
                     "microcontroller",
@@ -1718,7 +1810,7 @@
                   "path": "../data/notes/semester-4/cse/micro/Module 1.pdf",
                   "type": "pdf",
                   "size": "620.64 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/micro/Module 1.pdf",
                   "keywords": [
                     "mod 1"
@@ -1730,7 +1822,7 @@
                   "path": "../data/notes/semester-4/cse/micro/Module 2.pdf",
                   "type": "pdf",
                   "size": "6.2 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/micro/Module 2.pdf",
                   "keywords": [
                     "mod 2"
@@ -1742,7 +1834,7 @@
                   "path": "../data/notes/semester-4/cse/microcontroller/MC_module_1.pdf",
                   "type": "pdf",
                   "size": "1.17 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/microcontroller/MC_module_1.pdf",
                   "keywords": [
                     "microcontroller"
@@ -1754,7 +1846,7 @@
                   "path": "../data/notes/semester-4/cse/microcontroller/MC_module_2.pdf",
                   "type": "pdf",
                   "size": "6.2 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/microcontroller/MC_module_2.pdf",
                   "keywords": [
                     "microcontroller"
@@ -1766,7 +1858,7 @@
                   "path": "../data/notes/semester-4/cse/microcontroller/MC_module_4.pdf",
                   "type": "pdf",
                   "size": "556.37 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/microcontroller/MC_module_4.pdf",
                   "keywords": [
                     "microcontroller"
@@ -1778,7 +1870,7 @@
                   "path": "../data/notes/semester-4/cse/microcontroller/MC_module_5.pdf",
                   "type": "pdf",
                   "size": "999.29 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/microcontroller/MC_module_5.pdf",
                   "keywords": [
                     "microcontroller"
@@ -1790,7 +1882,7 @@
                   "path": "../data/notes/semester-4/cse/microcontroller/Micro_m2.pdf",
                   "type": "pdf",
                   "size": "1.4 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/microcontroller/Micro_m2.pdf",
                   "keywords": [
                     "microcontroller"
@@ -1802,7 +1894,7 @@
                   "path": "../data/notes/semester-4/cse/microcontroller/Micro_M5.pdf",
                   "type": "pdf",
                   "size": "999.29 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/microcontroller/Micro_M5.pdf",
                   "keywords": [
                     "microcontroller"
@@ -1814,7 +1906,7 @@
                   "path": "../data/notes/semester-4/cse/microcontroller/Module-3.pdf",
                   "type": "pdf",
                   "size": "477.19 KB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/microcontroller/Module-3.pdf",
                   "keywords": [
                     "microcontroller"
@@ -1832,7 +1924,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/dbms-mod1.pdf",
                   "type": "pdf",
                   "size": "2.52 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/dbms-mod1.pdf",
                   "keywords": [
                     "dbms",
@@ -1845,7 +1937,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/dbms-mod2.pdf",
                   "type": "pdf",
                   "size": "2.92 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/dbms-mod2.pdf",
                   "keywords": [
                     "dbms",
@@ -1858,7 +1950,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/PVP20 DBMS UNIT-1.pdf",
                   "type": "pdf",
                   "size": "1.87 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/PVP20 DBMS UNIT-1.pdf",
                   "keywords": [
                     "dbms",
@@ -1871,7 +1963,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/DBMS_MOD1.pdf",
                   "type": "pdf",
                   "size": "2.52 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/DBMS_MOD1.pdf",
                   "keywords": [
                     "dbms",
@@ -1884,7 +1976,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/DBMS_MOD_5.pdf",
                   "type": "pdf",
                   "size": "1.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/DBMS_MOD_5.pdf",
                   "keywords": [
                     "dbms",
@@ -1897,7 +1989,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/module-1.pdf",
                   "type": "pdf",
                   "size": "2.86 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/module-1.pdf",
                   "keywords": [
                     "dbms",
@@ -1910,7 +2002,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/module-2.pdf",
                   "type": "pdf",
                   "size": "2.81 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/module-2.pdf",
                   "keywords": [
                     "dbms",
@@ -1923,7 +2015,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/module-3.pdf",
                   "type": "pdf",
                   "size": "3.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/module-3.pdf",
                   "keywords": [
                     "dbms",
@@ -1936,7 +2028,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/module-4.pdf",
                   "type": "pdf",
                   "size": "3.33 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/module-4.pdf",
                   "keywords": [
                     "dbms",
@@ -1949,7 +2041,7 @@
                   "path": "/data/notes/semester-4/cse/dbms/module-5.pdf",
                   "type": "pdf",
                   "size": "1.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "/api/download?path=/data/notes/semester-4/cse/dbms/module-5.pdf",
                   "keywords": [
                     "dbms",
@@ -1972,7 +2064,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/dbms-mod1.pdf",
                   "type": "pdf",
                   "size": "2.52 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/dbms-mod1.pdf",
                   "keywords": [
                     "dbms",
@@ -1985,7 +2077,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/dbms-mod2.pdf",
                   "type": "pdf",
                   "size": "2.92 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/dbms-mod2.pdf",
                   "keywords": [
                     "dbms",
@@ -1998,7 +2090,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/DBMS_MOD1.pdf",
                   "type": "pdf",
                   "size": "2.52 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/DBMS_MOD1.pdf",
                   "keywords": [
                     "dbms",
@@ -2011,7 +2103,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/DBMS_MOD_5.pdf",
                   "type": "pdf",
                   "size": "1.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/DBMS_MOD_5.pdf",
                   "keywords": [
                     "dbms"
@@ -2023,7 +2115,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/module-1.pdf",
                   "type": "pdf",
                   "size": "2.86 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/module-1.pdf",
                   "keywords": [
                     "dbms"
@@ -2035,7 +2127,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/module-2.pdf",
                   "type": "pdf",
                   "size": "2.81 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/module-2.pdf",
                   "keywords": [
                     "dbms"
@@ -2047,7 +2139,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/module-3.pdf",
                   "type": "pdf",
                   "size": "3.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/module-3.pdf",
                   "keywords": [
                     "dbms"
@@ -2059,7 +2151,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/module-4.pdf",
                   "type": "pdf",
                   "size": "3.33 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/module-4.pdf",
                   "keywords": [
                     "dbms"
@@ -2071,7 +2163,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/module-5.pdf",
                   "type": "pdf",
                   "size": "1.24 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/module-5.pdf",
                   "keywords": [
                     "dbms"
@@ -2083,7 +2175,7 @@
                   "path": "../data/notes/semester-4/cse/dbms/PVP20 DBMS UNIT-1.pdf",
                   "type": "pdf",
                   "size": "1.87 MB",
-                  "uploadDate": "2025-11-08",
+                  "uploadDate": "2025-10-31",
                   "downloadUrl": "../data/notes/semester-4/cse/dbms/PVP20 DBMS UNIT-1.pdf",
                   "keywords": [
                     "dbms"
@@ -2104,24 +2196,543 @@
           "name": "Computer Science and Engineering",
           "subjects": [
             {
-              "id": "cse501",
-              "name": "Parallel Computing",
-              "materials": []
+              "id": "cse601",
+              "name": "AI",
+              "materials": [
+                {
+                  "title": "MODULE 1 AI.pptx",
+                  "description": "Ai notes",
+                  "path": "../data/notes/semester-5/cse/Ai/MODULE 1 AI.pptx.pdf",
+                  "type": "pdf",
+                  "size": "1.48 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Ai/MODULE 1 AI.pptx.pdf",
+                  "keywords": [
+                    "mod 1"
+                  ]
+                },
+                {
+                  "title": "Module 2",
+                  "description": "Module 2",
+                  "path": "/data/notes/semester-5/cse/ai/MODULE_2_AI.pdf",
+                  "type": "pdf",
+                  "size": "1.3 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-5/cse/ai/MODULE_2_AI.pdf"
+                },
+                {
+                  "title": "Module 3",
+                  "description": "ai",
+                  "path": "/data/notes/semester-5/cse/ai/MODULE-3.pdf",
+                  "type": "pdf",
+                  "size": "1.06 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-5/cse/ai/MODULE-3.pdf"
+                },
+                {
+                  "title": "Module 4",
+                  "description": "ai",
+                  "path": "/data/notes/semester-5/cse/ai/module-4.pdf",
+                  "type": "pdf",
+                  "size": "819.86 KB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-5/cse/ai/module-4.pdf"
+                },
+                {
+                  "title": "MODULE-3",
+                  "description": "Ai notes",
+                  "path": "../data/notes/semester-5/cse/Ai/MODULE-3.pdf",
+                  "type": "pdf",
+                  "size": "1.06 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "../data/notes/semester-5/cse/Ai/MODULE-3.pdf",
+                  "keywords": [
+                    "ai"
+                  ]
+                },
+                {
+                  "title": "module-4",
+                  "description": "Ai notes",
+                  "path": "../data/notes/semester-5/cse/Ai/module-4.pdf",
+                  "type": "pdf",
+                  "size": "819.86 KB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "../data/notes/semester-5/cse/Ai/module-4.pdf",
+                  "keywords": [
+                    "ai"
+                  ]
+                },
+                {
+                  "title": "MODULE_2_AI",
+                  "description": "Ai notes",
+                  "path": "../data/notes/semester-5/cse/Ai/MODULE_2_AI.pdf",
+                  "type": "pdf",
+                  "size": "1.3 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "../data/notes/semester-5/cse/Ai/MODULE_2_AI.pdf",
+                  "keywords": [
+                    "ai"
+                  ]
+                }
+              ]
             },
             {
-              "id": "cse502",
-              "name": "Blockchain Technology",
-              "materials": []
+              "id": "cse602",
+              "name": "Computer Network",
+              "materials": [
+                {
+                  "title": "CN Lab Manual",
+                  "description": "Computer Networks Lab Manual with practical exercises",
+                  "path": "../data/notes/semester-5/cse/computer network/CN Lab Manual.pdf",
+                  "type": "pdf",
+                  "size": "1.82 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN Lab Manual.pdf",
+                  "keywords": [
+                    "cn",
+                    "lab manual"
+                  ]
+                },
+                {
+                  "title": "CN Module 5",
+                  "description": "Computer Networks Module 5 notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
+                  "type": "pdf",
+                  "size": "4.13 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 5"
+                  ]
+                },
+                {
+                  "title": "CN Module 3",
+                  "description": "Computer Networks Module 3 notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN module 3.pdf",
+                  "type": "pdf",
+                  "size": "15.33 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN module 3.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "CN Module 4",
+                  "description": "Computer Networks Module 4 notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN module 4.pdf",
+                  "type": "pdf",
+                  "size": "7.72 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN module 4.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "CN Notes 1",
+                  "description": "Computer Networks comprehensive notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN-NOTES_1.pdf",
+                  "type": "pdf",
+                  "size": "3.46 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN-NOTES_1.pdf",
+                  "keywords": [
+                    "cn",
+                    "notes"
+                  ]
+                },
+                {
+                  "title": "Computer Networks Module 3",
+                  "description": "Computer Networks Module 3 detailed notes",
+                  "path": "../data/notes/semester-5/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
+                  "type": "pdf",
+                  "size": "3.07 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 3"
+                  ]
+                }
+              ]
             },
             {
-              "id": "cse503",
-              "name": "Big Data Analytics",
-              "materials": []
+              "id": "cse603",
+              "name": "EVS",
+              "materials": [
+                {
+                  "title": "BESK508-module-1-mcq",
+                  "description": "EVS notes",
+                  "path": "../data/notes/semester-5/cse/EVS/BESK508-module-1-mcq.pdf",
+                  "type": "pdf",
+                  "size": "512.4 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/EVS/BESK508-module-1-mcq.pdf",
+                  "keywords": [
+                    "evs"
+                  ]
+                },
+                {
+                  "title": "BESK508-module-3-mcq (1)",
+                  "description": "EVS notes",
+                  "path": "../data/notes/semester-5/cse/EVS/BESK508-module-3-mcq (1).pdf",
+                  "type": "pdf",
+                  "size": "388.9 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/EVS/BESK508-module-3-mcq (1).pdf",
+                  "keywords": [
+                    "evs"
+                  ]
+                },
+                {
+                  "title": "Environmental_Studies_MVJ22ENV58_AnswerKey",
+                  "description": "EVS notes",
+                  "path": "../data/notes/semester-5/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
+                  "type": "pdf",
+                  "size": "6.55 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
+                  "keywords": [
+                    "evs"
+                  ]
+                }
+              ]
             },
             {
-              "id": "cse504",
-              "name": "DevOps Engineering",
-              "materials": []
+              "id": "cse604",
+              "name": "Research Methodology",
+              "materials": [
+                {
+                  "title": "Research Methodology",
+                  "description": "Complete Research Methodology notes",
+                  "path": "../data/notes/semester-5/cse/Research methadology/Research Methodology.pdf",
+                  "type": "pdf",
+                  "size": "362.31 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/Research Methodology.pdf",
+                  "keywords": [
+                    "rm",
+                    "research"
+                  ]
+                },
+                {
+                  "title": "RM Module 4",
+                  "description": "Research Methodology Module 4",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM - 4.pdf",
+                  "type": "pdf",
+                  "size": "612.86 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM - 4.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "RM Module 3",
+                  "description": "Research Methodology Module 3",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM -3.pdf",
+                  "type": "pdf",
+                  "size": "562.35 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM -3.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "RM Unit 2",
+                  "description": "Research Methodology Unit 2",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM UNIT 2.pdf",
+                  "type": "pdf",
+                  "size": "386.42 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM UNIT 2.pdf",
+                  "keywords": [
+                    "rm",
+                    "unit 2"
+                  ]
+                },
+                {
+                  "title": "RM Unit 3",
+                  "description": "Research Methodology Unit 3",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM UNIT 3.pdf",
+                  "type": "pdf",
+                  "size": "358.76 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM UNIT 3.pdf",
+                  "keywords": [
+                    "rm",
+                    "unit 3"
+                  ]
+                },
+                {
+                  "title": "RM Module 4",
+                  "description": "Research Methodology Module 4 detailed",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM_Module IV.pdf",
+                  "type": "pdf",
+                  "size": "394.9 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM_Module IV.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "RM Module 5",
+                  "description": "Research Methodology Module 5",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM_Module V_pdf.pdf",
+                  "type": "pdf",
+                  "size": "1.53 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM_Module V_pdf.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 5"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cse605",
+              "name": "SEPM",
+              "materials": [
+                {
+                  "title": "SEPM Module 3",
+                  "description": "Software Engineering and Project Management Module 3",
+                  "path": "../data/notes/semester-5/cse/SEPM/SEPM Module 3.pdf",
+                  "type": "pdf",
+                  "size": "958.6 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SEPM Module 3.pdf",
+                  "keywords": [
+                    "sepm",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "SEPM Module 3 & 4",
+                  "description": "Software Engineering and Project Management Modules 3 & 4",
+                  "path": "../data/notes/semester-5/cse/SEPM/SEPM Module 3&4.pdf",
+                  "type": "pdf",
+                  "size": "48.6 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SEPM Module 3&4.pdf",
+                  "keywords": [
+                    "sepm",
+                    "mod 3",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "SEPM Module 4",
+                  "description": "Software Engineering and Project Management Module 4",
+                  "path": "../data/notes/semester-5/cse/SEPM/SEPM-MOD4.pdf",
+                  "type": "pdf",
+                  "size": "433.12 KB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SEPM-MOD4.pdf",
+                  "keywords": [
+                    "sepm",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "Module 1 ",
+                  "description": "SEPM Module 1 ",
+                  "path": "/data/notes/semester-5/cse/sepm/SE_Module_1_.pdf",
+                  "type": "pdf",
+                  "size": "944.86 KB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-5/cse/sepm/SE_Module_1_.pdf"
+                },
+                {
+                  "title": "SE_Module_1_",
+                  "description": "SEPM notes",
+                  "path": "../data/notes/semester-5/cse/SEPM/SE_Module_1_.pdf",
+                  "type": "pdf",
+                  "size": "944.86 KB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SE_Module_1_.pdf",
+                  "keywords": [
+                    "sepm"
+                  ]
+                },
+                {
+                  "title": "Module 2",
+                  "description": "Sepm",
+                  "path": "/data/notes/semester-5/cse/sepm/SEPM_Module_2.pdf",
+                  "type": "pdf",
+                  "size": "1.82 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-5/cse/sepm/SEPM_Module_2.pdf"
+                },
+                {
+                  "title": "SEPM_Module_2",
+                  "description": "SEPM notes",
+                  "path": "../data/notes/semester-5/cse/SEPM/SEPM_Module_2.pdf",
+                  "type": "pdf",
+                  "size": "1.82 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SEPM_Module_2.pdf",
+                  "keywords": [
+                    "sepm"
+                  ]
+                },
+                {
+                  "title": "Module 5",
+                  "description": "Module 5",
+                  "path": "/data/notes/semester-5/cse/sepm/BCS501-module-5-pdf.pdf",
+                  "type": "pdf",
+                  "size": "2.02 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "/api/download?path=/data/notes/semester-5/cse/sepm/BCS501-module-5-pdf.pdf"
+                },
+                {
+                  "title": "BCS501-module-5-pdf",
+                  "description": "SEPM notes",
+                  "path": "../data/notes/semester-5/cse/SEPM/BCS501-module-5-pdf.pdf",
+                  "type": "pdf",
+                  "size": "2.02 MB",
+                  "uploadDate": "2025-11-16",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/BCS501-module-5-pdf.pdf",
+                  "keywords": [
+                    "sepm"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cse606",
+              "name": "Theory of Computation",
+              "materials": [
+                {
+                  "title": "TOC Module 5 - Textbook",
+                  "description": "Theory of Computation Module 5 from textbook",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/BCS503-module-5-textbook.pdf",
+                  "type": "pdf",
+                  "size": "4.3 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/BCS503-module-5-textbook.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 5"
+                  ]
+                },
+                {
+                  "title": "TOC Module 5",
+                  "description": "Theory of Computation Module 5 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/mod 5.pdf",
+                  "type": "pdf",
+                  "size": "2.54 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/mod 5.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 5"
+                  ]
+                },
+                {
+                  "title": "TOC Module 4 - Problems",
+                  "description": "Theory of Computation Module 4 problems and solutions",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
+                  "type": "pdf",
+                  "size": "1.58 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 4",
+                    "problems"
+                  ]
+                },
+                {
+                  "title": "TOC Module 1 & 2",
+                  "description": "Theory of Computation Modules 1 and 2 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/module 1 and 2 toc notes.pdf",
+                  "type": "pdf",
+                  "size": "12.02 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/module 1 and 2 toc notes.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 1",
+                    "mod 2"
+                  ]
+                },
+                {
+                  "title": "TOC Module 3",
+                  "description": "Theory of Computation Module 3 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/toc m3.pdf",
+                  "type": "pdf",
+                  "size": "1.44 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/toc m3.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "TOC Module 4",
+                  "description": "Theory of Computation Module 4 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/toc m4.pdf",
+                  "type": "pdf",
+                  "size": "19.76 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/toc m4.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "TOC Module 1",
+                  "description": "Theory of Computation Module 1 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/TOC module 1.pdf",
+                  "type": "pdf",
+                  "size": "40.23 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/TOC module 1.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 1"
+                  ]
+                },
+                {
+                  "title": "TOC Module 3 & 4",
+                  "description": "Theory of Computation Modules 3 and 4 combined notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/TOC Module 3 and 4.pdf",
+                  "type": "pdf",
+                  "size": "24.08 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/TOC Module 3 and 4.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 3",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "TOC Module 2",
+                  "description": "Theory of Computation Module 2 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/toc_mod_2.pdf",
+                  "type": "pdf",
+                  "size": "7.8 MB",
+                  "uploadDate": "2025-11-10",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/toc_mod_2.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 2"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -2137,416 +2748,23 @@
           "subjects": [
             {
               "id": "cse601",
-              "name": "AI",
-              "materials": [
-                {
-                  "title": "MODULE 1 AI.pptx",
-                  "description": "Ai notes",
-                  "path": "../data/notes/semester-6/cse/Ai/MODULE 1 AI.pptx.pdf",
-                  "type": "pdf",
-                  "size": "1.48 MB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Ai/MODULE 1 AI.pptx.pdf",
-                  "keywords": [
-                    "mod 1"
-                  ]
-                }
-              ]
+              "name": "Parallel Computing",
+              "materials": []
             },
             {
               "id": "cse602",
-              "name": "Computer Network",
-              "materials": [
-                {
-                  "title": "CN Lab Manual",
-                  "description": "Computer Networks Lab Manual with practical exercises",
-                  "path": "../data/notes/semester-6/cse/computer network/CN Lab Manual.pdf",
-                  "type": "pdf",
-                  "size": "1.82 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN Lab Manual.pdf",
-                  "keywords": [
-                    "cn",
-                    "lab manual"
-                  ]
-                },
-                {
-                  "title": "CN Module 5",
-                  "description": "Computer Networks Module 5 notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
-                  "type": "pdf",
-                  "size": "4.13 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 5"
-                  ]
-                },
-                {
-                  "title": "CN Module 3",
-                  "description": "Computer Networks Module 3 notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN module 3.pdf",
-                  "type": "pdf",
-                  "size": "15.33 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN module 3.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "CN Module 4",
-                  "description": "Computer Networks Module 4 notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN module 4.pdf",
-                  "type": "pdf",
-                  "size": "7.72 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN module 4.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "CN Notes 1",
-                  "description": "Computer Networks comprehensive notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN-NOTES_1.pdf",
-                  "type": "pdf",
-                  "size": "3.46 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN-NOTES_1.pdf",
-                  "keywords": [
-                    "cn",
-                    "notes"
-                  ]
-                },
-                {
-                  "title": "Computer Networks Module 3",
-                  "description": "Computer Networks Module 3 detailed notes",
-                  "path": "../data/notes/semester-6/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
-                  "type": "pdf",
-                  "size": "3.07 MB",
-                  "uploadDate": "2025-11-07",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 3"
-                  ]
-                }
-              ]
+              "name": "Blockchain Technology",
+              "materials": []
             },
             {
               "id": "cse603",
-              "name": "EVS",
-              "materials": [
-                {
-                  "title": "BESK508-module-1-mcq",
-                  "description": "EVS notes",
-                  "path": "../data/notes/semester-6/cse/EVS/BESK508-module-1-mcq.pdf",
-                  "type": "pdf",
-                  "size": "512.4 KB",
-                  "uploadDate": "2025-11-03",
-                  "downloadUrl": "../data/notes/semester-6/cse/EVS/BESK508-module-1-mcq.pdf",
-                  "keywords": [
-                    "evs"
-                  ]
-                },
-                {
-                  "title": "BESK508-module-3-mcq (1)",
-                  "description": "EVS notes",
-                  "path": "../data/notes/semester-6/cse/EVS/BESK508-module-3-mcq (1).pdf",
-                  "type": "pdf",
-                  "size": "388.9 KB",
-                  "uploadDate": "2025-11-03",
-                  "downloadUrl": "../data/notes/semester-6/cse/EVS/BESK508-module-3-mcq (1).pdf",
-                  "keywords": [
-                    "evs"
-                  ]
-                },
-                {
-                  "title": "Environmental_Studies_MVJ22ENV58_AnswerKey",
-                  "description": "EVS notes",
-                  "path": "../data/notes/semester-6/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
-                  "type": "pdf",
-                  "size": "6.44 KB",
-                  "uploadDate": "2025-11-03",
-                  "downloadUrl": "../data/notes/semester-6/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
-                  "keywords": [
-                    "evs"
-                  ]
-                }
-              ]
+              "name": "Big Data Analytics",
+              "materials": []
             },
             {
               "id": "cse604",
-              "name": "Research Methodology",
-              "materials": [
-                {
-                  "title": "Research Methodology",
-                  "description": "Complete Research Methodology notes",
-                  "path": "../data/notes/semester-6/cse/Research methadology/Research Methodology.pdf",
-                  "type": "pdf",
-                  "size": "362.31 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/Research Methodology.pdf",
-                  "keywords": [
-                    "rm",
-                    "research"
-                  ]
-                },
-                {
-                  "title": "RM Module 4",
-                  "description": "Research Methodology Module 4",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM - 4.pdf",
-                  "type": "pdf",
-                  "size": "612.86 KB",
-                  "uploadDate": "2025-11-04",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM - 4.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "RM Module 3",
-                  "description": "Research Methodology Module 3",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM -3.pdf",
-                  "type": "pdf",
-                  "size": "562.35 KB",
-                  "uploadDate": "2025-11-04",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM -3.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "RM Unit 2",
-                  "description": "Research Methodology Unit 2",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM UNIT 2.pdf",
-                  "type": "pdf",
-                  "size": "386.42 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM UNIT 2.pdf",
-                  "keywords": [
-                    "rm",
-                    "unit 2"
-                  ]
-                },
-                {
-                  "title": "RM Unit 3",
-                  "description": "Research Methodology Unit 3",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM UNIT 3.pdf",
-                  "type": "pdf",
-                  "size": "358.76 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM UNIT 3.pdf",
-                  "keywords": [
-                    "rm",
-                    "unit 3"
-                  ]
-                },
-                {
-                  "title": "RM Module 4",
-                  "description": "Research Methodology Module 4 detailed",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM_Module IV.pdf",
-                  "type": "pdf",
-                  "size": "394.9 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM_Module IV.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "RM Module 5",
-                  "description": "Research Methodology Module 5",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM_Module V_pdf.pdf",
-                  "type": "pdf",
-                  "size": "1.53 MB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM_Module V_pdf.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 5"
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "cse605",
-              "name": "SEPM",
-              "materials": [
-                {
-                  "title": "SEPM Module 3",
-                  "description": "Software Engineering and Project Management Module 3",
-                  "path": "../data/notes/semester-6/cse/SEPM/SEPM Module 3.pdf",
-                  "type": "pdf",
-                  "size": "958.6 KB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/SEPM/SEPM Module 3.pdf",
-                  "keywords": [
-                    "sepm",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "SEPM Module 3 & 4",
-                  "description": "Software Engineering and Project Management Modules 3 & 4",
-                  "path": "../data/notes/semester-6/cse/SEPM/SEPM Module 3&4.pdf",
-                  "type": "pdf",
-                  "size": "48.6 MB",
-                  "uploadDate": "2025-11-02",
-                  "downloadUrl": "../data/notes/semester-6/cse/SEPM/SEPM Module 3&4.pdf",
-                  "keywords": [
-                    "sepm",
-                    "mod 3",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "SEPM Module 4",
-                  "description": "Software Engineering and Project Management Module 4",
-                  "path": "../data/notes/semester-6/cse/SEPM/SEPM-MOD4.pdf",
-                  "type": "pdf",
-                  "size": "433.12 KB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/SEPM/SEPM-MOD4.pdf",
-                  "keywords": [
-                    "sepm",
-                    "mod 4"
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "cse606",
-              "name": "Theory of Computation",
-              "materials": [
-                {
-                  "title": "TOC Module 5 - Textbook",
-                  "description": "Theory of Computation Module 5 from textbook",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/BCS503-module-5-textbook.pdf",
-                  "type": "pdf",
-                  "size": "4.3 MB",
-                  "uploadDate": "2025-11-01",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/BCS503-module-5-textbook.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 5"
-                  ]
-                },
-                {
-                  "title": "TOC Module 5",
-                  "description": "Theory of Computation Module 5 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/mod 5.pdf",
-                  "type": "pdf",
-                  "size": "2.54 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/mod 5.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 5"
-                  ]
-                },
-                {
-                  "title": "TOC Module 4 - Problems",
-                  "description": "Theory of Computation Module 4 problems and solutions",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
-                  "type": "pdf",
-                  "size": "1.58 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 4",
-                    "problems"
-                  ]
-                },
-                {
-                  "title": "TOC Module 1 & 2",
-                  "description": "Theory of Computation Modules 1 and 2 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/module 1 and 2 toc notes.pdf",
-                  "type": "pdf",
-                  "size": "12.02 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/module 1 and 2 toc notes.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 1",
-                    "mod 2"
-                  ]
-                },
-                {
-                  "title": "TOC Module 3",
-                  "description": "Theory of Computation Module 3 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/toc m3.pdf",
-                  "type": "pdf",
-                  "size": "1.44 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/toc m3.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "TOC Module 4",
-                  "description": "Theory of Computation Module 4 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/toc m4.pdf",
-                  "type": "pdf",
-                  "size": "19.76 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/toc m4.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "TOC Module 1",
-                  "description": "Theory of Computation Module 1 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/TOC module 1.pdf",
-                  "type": "pdf",
-                  "size": "40.23 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/TOC module 1.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 1"
-                  ]
-                },
-                {
-                  "title": "TOC Module 3 & 4",
-                  "description": "Theory of Computation Modules 3 and 4 combined notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/TOC Module 3 and 4.pdf",
-                  "type": "pdf",
-                  "size": "24.08 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/TOC Module 3 and 4.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 3",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "TOC Module 2",
-                  "description": "Theory of Computation Module 2 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/toc_mod_2.pdf",
-                  "type": "pdf",
-                  "size": "7.8 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/toc_mod_2.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 2"
-                  ]
-                }
-              ]
+              "name": "DevOps Engineering",
+              "materials": []
             }
           ]
         }

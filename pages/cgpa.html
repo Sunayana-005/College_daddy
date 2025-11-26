@@ -45,6 +45,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
         <script src="../assets/js/pages/cgpa.js" defer></script>
+        <!-- Theme initialization script - runs before page render to prevent flash -->
+        <script>
+          (function() {
+            try {
+              const theme = localStorage.getItem('theme') || 'dark';
+              document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {
+              document.documentElement.setAttribute('data-theme', 'dark');
+            }
+          })();
+        </script>
     </head>
     
 <body>
@@ -54,7 +65,9 @@
                 <i class="fas fa-graduation-cap"></i>
                 <span>College Daddy</span>
             </a>
-            <button class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <div class="nav-actions">
+                <button class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
             <nav class="nav-links">
                 <a href="../index.html" class="nav-link">Home</a>
                 <a href="cgpa.html" class="nav-link">CGPA Calculator</a>
@@ -62,6 +75,13 @@
                 <a href="pomodoro.html" class="nav-link">Study Timer</a>
                 <a href="notes.html" class="nav-link">Notes</a>
                 <a href="roadmap.html" class="nav-link">Roadmap</a>
+                <button
+                    class="theme-toggle"
+                    aria-label="Toggle dark/light theme"
+                    title="Toggle theme"
+                >
+                    <span class="theme-icon">🌙</span>
+                </button>
             </nav>
         </div>
     </header>
@@ -269,9 +289,6 @@
                 <div class="social-links">
                     <a href="https://www.linkedin.com/company/collegedaddy-tech" target="_blank" class="social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/mugenkyou/College_daddy" target="_blank" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>

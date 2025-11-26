@@ -20,6 +20,9 @@
       name="description"
       content="Your ultimate companion for academic success. Track your progress, calculate your grades, and stay organized throughout your college journey."
     />
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <title>
       College Daddy - The Best CGPA Calculator, Study Tools & Roadmaps for
       Students
@@ -53,9 +56,12 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="assets/css/navigation.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets\css\hero.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
     <style>
       /* FAQ Toggle Specific Styles , WHY IS FAQ STYLING HERE , SEPARATE THIS OUT */
       .faq-question {
@@ -105,28 +111,53 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- this font below is for hero section , you can check that in hero.css -->
+    <!-- Web font for hero/title -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Theme initialization script - runs before page render to prevent flash -->
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("theme") || "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          // localStorage not available, use default
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
   </head>
+  
   <body>
     <header>
+      <div id="offline-banner" style="
+    display:none;
+    background:#ff4d4d;
+    color:white;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;">
+    You are offline. Some features may not work.
+</div>
+
       <div class="nav-container">
         <a href="index.html" class="logo" aria-label="College Daddy Home">
           <i class="fas fa-graduation-cap"></i>
           <span>College Daddy</span>
         </a>
-        <button
-          class="menu-button"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
+        <div class="nav-actions">
+          <button
+            class="menu-button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
         <nav class="nav-links">
           <a href="index.html" class="nav-link">Home</a>
           <a href="pages/cgpa.html" class="nav-link">CGPA Calculator</a>
@@ -134,83 +165,78 @@
           <a href="pages/pomodoro.html" class="nav-link">Study Timer</a>
           <a href="pages/notes.html" class="nav-link">Notes</a>
           <a href="pages/roadmap.html" class="nav-link">Roadmap</a>
+          <button
+            class="theme-toggle"
+            aria-label="Toggle dark/light theme"
+            title="Toggle theme"
+          >
+            <span class="theme-icon">🌙</span>
+          </button>
         </nav>
       </div>
     </header>
 
     <section class="hero">
-      <h1 class="momo-signature-regular">
-        College Daddy: The Ultimate Student Toolkit
-      </h1>
+      <h1>College Daddy: The Ultimate Student Toolkit</h1>
       <p class="subheading">
-        CGPA Calculator , Study Planner & Expert Roadmaps
+        <span id="changingText"></span>
+        <span class="cursor">|</span>
       </p>
       <p class="tagline">
-        <strong
+        <strong "
           >Developed with students in mind, for students by a student.</strong
         >
       </p>
     </section>
 
     <section class="features">
-      <h2>College Daddy Tools & Resources</h2>
-      <div class="features-container">
-        <div class="feature-card" data-url="pages/cgpa.html">
-          <div class="feature-icon">📊</div>
-          <h3>Grade Calculator</h3>
-          <p>
-            Calculate your CGPA easily with College Daddy's advanced calculator.
-            Track your academic progress across semesters.
-          </p>
-        </div>
+  <h2>College Daddy Tools & Resources</h2>
+  <div class="features-container">
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="0" data-url="pages/cgpa.html">
+      <div class="feature-icon">📊</div>
+      <h3>Grade Calculator</h3>
+      <p>Calculate your CGPA easily with College Daddy's advanced calculator. Track your academic progress across semesters.</p>
+    </div>
 
-        <div class="feature-card" data-url="pages/notes.html">
-          <div class="feature-icon">📒</div>
-          <h3>Study Resources</h3>
-          <p>
-            Get notes, lab manuals, and question papers for all 8 semesters in
-            one place with College Daddy! Perfect for exams, revisions, and
-            practicals.
-          </p>
-        </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="100" data-url="pages/notes.html">
+      <div class="feature-icon">📒</div>
+      <h3>Study Resources</h3>
+      <p>Get notes, lab manuals, and question papers for all 8 semesters in one place with College Daddy! Perfect for exams, revisions, and practicals.</p>
+    </div>
 
-        <div class="feature-card" data-url="pages/iacal.html">
-          <div class="feature-icon">📝</div>
-          <h3>IA Calculator</h3>
-          <p>
-            Keep track of your internal assessment marks and calculate your best
-            performances with College Daddy's tools.
-          </p>
-        </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="200" data-url="pages/iacal.html">
+      <div class="feature-icon">📝</div>
+      <h3>IA Calculator</h3>
+      <p>Keep track of your internal assessment marks and calculate your best performances with College Daddy's tools.</p>
+    </div>
 
-        <div class="feature-card" data-url="pages/pomodoro.html">
-          <div class="feature-icon">⏳</div>
-          <h3>Study Planner</h3>
-          <p>
-            Boost your productivity with College Daddy's simple Pomodoro timer!
-            Stay focused by working in short sprints with regular breaks.
-          </p>
-        </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="300" data-url="pages/pomodoro.html">
+      <div class="feature-icon">⏳</div>
+      <h3>Study Planner</h3>
+      <p>Boost your productivity with College Daddy's simple Pomodoro timer! Stay focused by working in short sprints with regular breaks.</p>
+    </div>
 
-        <div class="feature-card" data-url="pages/roadmap.html">
-          <div class="feature-icon">🛤️</div>
-          <h3>College Tips</h3>
-          <p>
-            Your guided path to mastering tech careers like AI, Full Stack, and
-            more with College Daddy's roadmaps!
-          </p>
-        </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="400" data-url="pages/roadmap.html">
+      <div class="feature-icon">🛤️</div>
+      <h3>College Tips</h3>
+      <p>Your guided path to mastering tech careers like AI, Full Stack, and more with College Daddy's roadmaps!</p>
+    </div>
+    <!-- Feature: Student Resources -->
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="500" data-url="https://www.indiabix.com/">
+      <div class="feature-icon">🧠</div>
+      <h3>Student Resources</h3>
+      <p>Sharpen your problem-solving skills with College Daddy's best aptitude resources!</p>
+    </div>
 
-        <div class="feature-card" data-url="https://www.indiabix.com/">
-          <div class="feature-icon">🧠</div>
-          <h3>Student Resources</h3>
-          <p>
-            Sharpen your problem-solving skills with College Daddy's best
-            aptitude resources!
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- Feature: CP & DSA Resources -->
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="600" data-url="pages/cpdsa.html">
+      <div class="feature-icon">💻</div>
+      <h3>CP & DSA Resources</h3>
+      <p>Explore top platforms, tutorials, and practice sites for mastering Competitive Programming and Data Structures & Algorithms.</p>
+    </div>
+
+  </div>
+</section>
 
     <section class="testimonials">
       <h2>Why Students Love College Daddy</h2>
@@ -365,49 +391,60 @@
       </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>College Daddy</h3>
-                <p>Your ultimate companion for academic success.</p>
-                <p class="tagline">Developed with students in mind, for students by a student.</p>
-                
-                <div class="social-links">
-                    <a href="https://www.instagram.com/collegedaddy.tech/" target="_blank" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <!-- LinkedIn link commented out
-                    <a href="https://www.linkedin.com/company/collegedaddy-tech/" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    -->
-                    <a href="https://github.com/collegedaddy" target="_blank" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">College Daddy Home</a></li>
-                    <li><a href="pages/cgpa.html">College Daddy CGPA Calculator</a></li>
-                    <li><a href="pages/notes.html">College Daddy Notes</a></li>
-                    <li><a href="pages/roadmap.html">College Daddy Roadmap</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSciD1CUiYUpiz4mtQSTYG9XeCRyG3CEhr9GNL03WxmRbFOgkw/viewform?usp=dialog" target="_blank" class="feedback-link">Send Feedback to College Daddy</a></p>
-                <p><!-- Follow our journey on <a href="https://www.linkedin.com/company/collegedaddy-tech/" target="_blank" style="color: var(--primary-color); text-decoration: none;">LinkedIn</a> for updates and resources. -->
-Follow our journey on social media for updates and resources.</p>
-            </div>
+    <footer class="footer" id="footerSec">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>College Daddy</h3>
+          <p>Your ultimate companion for academic success.</p>
+          <p class="tagline">
+            Developed with students in mind, for students by a student.
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/company/collegedaddy-tech"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 College Daddy. All rights reserved. Developed by <span class="developer-name">Sachin</span></p>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">College Daddy Home</a></li>
+            <li><a href="pages/cgpa.html">College Daddy CGPA Calculator</a></li>
+            <li><a href="pages/notes.html">College Daddy Notes</a></li>
+            <li><a href="pages/roadmap.html">College Daddy Roadmap</a></li>
+          </ul>
         </div>
+
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSciD1CUiYUpiz4mtQSTYG9XeCRyG3CEhr9GNL03WxmRbFOgkw/viewform?usp=dialog"
+              target="_blank"
+              class="feedback-link"
+              >Send Feedback to College Daddy</a
+            >
+          </p>
+          <p>
+            <!-- Follow our journey on <a href="https://www.linkedin.com/company/collegedaddy-tech/" target="_blank" style="color: var(--primary-color); text-decoration: none;">LinkedIn</a> for updates and resources. -->
+            Follow our journey on social media for updates and resources.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 College Daddy. All rights reserved. Developed by
+          <span class="developer-name">Sachin</span>
+        </p>
+      </div>
     </footer>
 
     <script
@@ -439,6 +476,29 @@ Follow our journey on social media for updates and resources.</p>
             item.classList.toggle("active");
           });
         });
+      });
+    </script>
+    <script type="module" src="offline/offlineCache.js"></script>
+    
+    <!-- Offline Mode Check -->
+    <script>
+      window.addEventListener("load", () => {
+        const banner = document.getElementById("offline-banner");
+
+        function updateStatus() {
+          if (!navigator.onLine) {
+            banner.style.display = "block";
+            console.log("You are offline");
+          } else {
+            banner.style.display = "none";
+            console.log("You are online");
+          }
+        }
+
+        updateStatus();
+
+        window.addEventListener("online", updateStatus);
+        window.addEventListener("offline", updateStatus);
       });
     </script>
   </body>
