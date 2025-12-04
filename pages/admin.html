@@ -6,6 +6,31 @@
   <title>College Daddy - Admin PDF Upload</title>
   <link rel="stylesheet" href="/assets/css/notes.css">
   <style>
+    :root {
+    --primary-color: #4285f4;
+    --primary-dark: #3367d6;
+    --secondary-color: #34a853;
+    --accent-color: #fbbc05;
+    --danger-color: #ea4335;
+    --dark-bg: #000000;
+    --darker-bg: #000000;
+    --border-color: #222222;
+    --text-color: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --text-bright: #ffffff;
+    --transition-speed: 0.3s;
+    --border-radius: 8px;
+}
+
+/* Light theme variables */
+[data-theme="light"] {
+    --dark-bg: #ffffff;
+    --darker-bg: #f5f5f5;
+    --border-color: #e0e0e0;
+    --text-color: #333333;
+    --text-muted: #666666;
+    --text-bright: #000000;
+}
     .admin-container {
       max-width: 500px;
       margin: 3rem auto;
@@ -68,14 +93,13 @@
     .success { color: var(--success-color); }
     .error { color: var(--error-color); }
     .materials-list {
-      margin-top: 2.5rem;
+      margin-top: 0.5rem;
       background: var(--background-hover);
       border-radius: 10px;
       padding: 1.2rem 1rem;
     }
     .materials-list h2 {
       font-size: 1.1rem;
-      margin-bottom: 1rem;
       color: var(--primary-color);
     }
     .material-item {
@@ -117,6 +141,71 @@
     <a href="notes.html" style="display:block;text-align:center;margin-top:2rem;color:var(--primary-color);">&larr; Back to Notes</a>
   </div>
   <script src="/assets/js/pages/admin.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+    const dataMap = {
+        'sem1': [ 'CSE', 'EEE', 'Civil' ],
+        'sem2': [ 'CSE', 'EEE', 'Mechanical' ],
+        'sem3': [ 'CSE', 'Electrical', 'Mechanical' ]
+    };
+
+  
+    const subjectMap = {
+        'CSE': [ 'DSA', 'DBMS', 'OS' ],
+        'EEE': [ 'Circuits', 'DSP', 'Control Systems' ],
+        'Civil': [ 'Mechanics', 'Hydrology' ],
+        'Mechanical': [ 'Thermodynamics', 'Fluid Mechanics' ],
+        'Electrical': [ 'Power Systems', 'Machines' ]
+    };
+
+    const semesterSelect = document.getElementById('semester');
+    const branchSelect = document.getElementById('branch');
+    const subjectSelect = document.getElementById('subject');
+    const form = document.getElementById('uploadForm');
+
+    const populateSelect = (selectElement, items, defaultText) => {
+        selectElement.innerHTML = `<option value="" disabled selected>${defaultText}</option>`;
+        items.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item; 
+            option.textContent = item;
+            selectElement.appendChild(option);
+        });
+        selectElement.disabled = items.length === 0;
+    };
+
+    const updateBranches = () => {
+        const selectedSem = semesterSelect.value;
+        const branches = dataMap[selectedSem] || [];
+        
+        populateSelect(branchSelect, branches, "Select Branch");
+        updateSubjects();
+    };
+
+    const updateSubjects = () => {
+        const selectedBranch = branchSelect.value;
+        const subjects = subjectMap[selectedBranch] || [];
+        populateSelect(subjectSelect, subjects, "Select Subject");
+      
+    };
+
+    const initForm = () => {
+        const semesters = [
+            { id: 'sem1', name: 'Semester 1' },
+            { id: 'sem2', name: 'Semester 2' },
+            { id: 'sem3', name: 'Semester 3' }
+        ];
+   
+        populateSelect(semesterSelect, semesters.map(s => s.id), "Select Semester");
+        branchSelect.disabled = true;
+        subjectSelect.disabled = true;
+    };
+    semesterSelect.addEventListener('change', updateBranches);
+    branchSelect.addEventListener('change', updateSubjects);
+    initForm();
+});
+  </script>
 </body>
 </html> 
 
