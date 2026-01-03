@@ -291,7 +291,7 @@ body {
 .music-section {
     width: 100%;
     max-width: 600px;
-    background: var(--accent-color);
+    background: var(--card-bg);
     border-radius: 10px;
     padding: 2rem;
     position: relative;
@@ -343,7 +343,7 @@ body {
 .stats-panel {
     width: 100%;
     max-width: 600px;
-    background: var(--accent-color);
+    background: var(--card-bg);
     border-radius: 10px;
     padding: 2rem;
     margin-top: 2rem;
@@ -501,7 +501,7 @@ html {
         right: 20px;
         width: 40px;
         height: 40px;
-        background: var(--accent-color);
+        background: var(--bg-dark);
         border: 2px solid var(--primary-color);
         border-radius: 50%;
         cursor: pointer;
@@ -526,7 +526,7 @@ html {
         top: 70px;
         right: 20px;
         width: 300px;
-        background: var(--accent-color);
+        background: var(--card-bg);
         border-radius: 10px;
         padding: 2rem;
         margin-bottom: 2rem;
