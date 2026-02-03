@@ -16,14 +16,25 @@ document.addEventListener('click', (event) => {
     }
 });
 
+// Success Modal Elements
+const modalOverlay = document.querySelector('.modal-overlay');
+const modalCloseBtn = document.querySelector('.modal-btn');
+
+if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', () => {
+        modalOverlay.classList.remove('active');
+    });
+}
+
 // Handle checkbox interactions and progress bars
 document.querySelectorAll('.roadmap-section').forEach(section => {
     const headingCheckbox = section.querySelector('.heading-checkbox');
     const subheadingCheckboxes = section.querySelectorAll('.subheading-checkbox');
     const progressBar = section.querySelector('.progress-bar');
+    const sectionId = section.querySelector('h2 span').textContent.trim();
 
     // Update progress bar
-    const updateProgress = () => {
+    const updateProgress = (isInitialLoad = false) => {
         const totalCheckboxes = subheadingCheckboxes.length;
         const checkedCheckboxes = Array.from(subheadingCheckboxes).filter(checkbox => checkbox.checked).length;
         const progress = (checkedCheckboxes / totalCheckboxes) * 100;
@@ -32,6 +43,22 @@ document.querySelectorAll('.roadmap-section').forEach(section => {
         // Update heading checkbox based on subheadings
         headingCheckbox.checked = checkedCheckboxes === totalCheckboxes;
         headingCheckbox.indeterminate = checkedCheckboxes > 0 && checkedCheckboxes < totalCheckboxes;
+
+        // Trigger Success (Confetti + Modal) only on user interaction, not page load
+        if (progress === 100 && !isInitialLoad && section.dataset.completed !== 'true') {
+            section.dataset.completed = 'true';
+            if (typeof confetti === 'function') {
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#009dff', '#00ff88', '#ffffff']
+                });
+            }
+            modalOverlay.classList.add('active');
+        } else if (progress < 100) {
+            section.dataset.completed = 'false';
+        }
 
         // Save progress to localStorage
         saveProgress(section);
@@ -74,7 +101,6 @@ document.querySelectorAll('.roadmap-section').forEach(section => {
 
     // Save progress to localStorage
     const saveProgress = (section) => {
-        const sectionId = section.querySelector('h2 span').textContent.trim();
         const progress = {
             heading: headingCheckbox.checked,
             subheadings: Array.from(subheadingCheckboxes).map(checkbox => checkbox.checked)
@@ -84,7 +110,6 @@ document.querySelectorAll('.roadmap-section').forEach(section => {
 
     // Load saved progress
     const loadProgress = () => {
-        const sectionId = section.querySelector('h2 span').textContent.trim();
         const savedProgress = localStorage.getItem(`roadmap-progress-${sectionId}`);
         
         if (savedProgress) {
@@ -93,7 +118,7 @@ document.querySelectorAll('.roadmap-section').forEach(section => {
             subheadingCheckboxes.forEach((checkbox, index) => {
                 checkbox.checked = progress.subheadings[index];
             });
-            updateProgress();
+            updateProgress(true); // Pass true to prevent modal popups on refresh
         }
     };
 
