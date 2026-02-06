@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1XX1WLPNP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G1XX1WLPNP');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Progress Tracker - College Daddy</title>
+    
+    <script src="../assets/js/components/navigation.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../roadmap_assets/css/progress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Theme initialization script -->
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme') || 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+</head>
+<body>
+    
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo" aria-label="College Daddy Home">
+                <i class="fas fa-graduation-cap"></i>
+                <span>College Daddy</span>
+            </a>
+            <div class="nav-actions">
+                <button class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            </div>
+            <nav class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="cgpa.html" class="nav-link">CGPA Calculator</a>
+                <a href="iacal.html" class="nav-link">IA Calculator</a>
+                <a href="pomodoro.html" class="nav-link">Study Timer</a>
+                <a href="progress.html" class="nav-link active">Progress</a>
+                <a href="notes.html" class="nav-link">Notes</a>
+                <a href="roadmap.html" class="nav-link">Roadmap</a>
+                <button
+                    class="theme-toggle"
+                    aria-label="Toggle dark/light theme"
+                    title="Toggle theme"
+                >
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="progress-container">
+            
+            <!-- Page Header -->
+            <div class="progress-header">
+                <h1><i class="fas fa-chart-line"></i> Progress Tracker</h1>
+                <p class="subtitle">Track your study journey and build lasting habits</p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-container">
+                <button class="tab-btn active" onclick="showTab('stats')" id="statsTab">
+                    <i class="fas fa-chart-bar"></i> Statistics
+                </button>
+                <button class="tab-btn" onclick="showTab('calendar')" id="calendarTab">
+                    <i class="fas fa-calendar"></i> Calendar
+                </button>
+            </div>
+
+            <!-- Statistics Tab -->
+            <div id="statsContent" class="tab-content active">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="daysFocused">0</div>
+                            <div class="stat-label">Days Focused This Month</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="avgFocusTime">0m</div>
+                            <div class="stat-label">Average Focus/Day</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="totalFocusTime">0h</div>
+                            <div class="stat-label">Total Focus Time</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-tomato"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="totalPomodoros">0</div>
+                            <div class="stat-label">Total Pomodoros</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card highlight">
+                        <div class="stat-icon"><i class="fas fa-fire"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="currentStreak">0</div>
+                            <div class="stat-label">Current Streak</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card highlight">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="bestStreak">0</div>
+                            <div class="stat-label">Best Streak Ever</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span>Monthly Progress</span>
+                        <span class="progress-percent" id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <!-- Motivation Message -->
+                <div class="motivation-card" id="motivationCard" style="display: none;">
+                    <i class="fas fa-sparkles"></i>
+                    <span id="motivationText"></span>
+                </div>
+            </div>
+
+            <!-- Calendar Tab -->
+            <div id="calendarContent" class="tab-content">
+                <div class="calendar-card">
+                    <div class="calendar-header">
+                        <button class="month-nav" onclick="changeMonth(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h2 id="monthYear"></h2>
+                        <button class="month-nav" onclick="changeMonth(1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+
+                    <div class="calendar-grid" id="calendarGrid"></div>
+
+                    <div class="calendar-legend">
+                        <span>Less</span>
+                        <div class="legend-colors">
+                            <div class="legend-box intensity-0"></div>
+                            <div class="legend-box intensity-1"></div>
+                            <div class="legend-box intensity-2"></div>
+                            <div class="legend-box intensity-3"></div>
+                            <div class="legend-box intensity-4"></div>
+                        </div>
+                        <span>More</span>
+                    </div>
+                </div>
+
+                <!-- Day Details (shown when clicking a day) -->
+                <div class="day-details" id="dayDetails" style="display: none;">
+                    <h3 id="selectedDate"></h3>
+                    <div class="detail-stats">
+                        <div class="detail-item">
+                            <span class="detail-value" id="detailPomodoros">0</span>
+                            <span class="detail-label">Pomodoros</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-value" id="detailMinutes">0</span>
+                            <span class="detail-label">Minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Management -->
+            <div class="data-management">
+                <h3><i class="fas fa-database"></i> Data Management</h3>
+                <p class="management-desc">Your data is stored locally in your browser. Export for backup or clear to start fresh.</p>
+                
+                <div class="management-buttons">
+                    <button class="mgmt-btn export" onclick="exportData()">
+                        <i class="fas fa-download"></i> Export Data
+                    </button>
+                    <label class="mgmt-btn import">
+                        <i class="fas fa-upload"></i> Import Data
+                        <input type="file" id="importFile" accept=".json" onchange="importDataFile(event)" style="display: none;">
+                    </label>
+                    <button class="mgmt-btn clear" onclick="clearAllData()">
+                        <i class="fas fa-trash"></i> Clear All Data
+                    </button>
+                </div>
+
+                <div class="data-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Data is stored locally in your browser. Clearing browser data will remove your progress history.</span>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>Build Consistency</h4>
+                    <p>Track your daily study sessions and maintain your streak to build lasting habits.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-chart-area"></i>
+                    <h4>Visualize Progress</h4>
+                    <p>See your study patterns with the monthly calendar heatmap and detailed statistics.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-lock"></i>
+                    <h4>Privacy First</h4>
+                    <p>All data stays on your device. No servers, no tracking, complete privacy.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>College Daddy</h3>
+                <p>Your ultimate companion for academic success.</p>
+                <p class="tagline">Developed with students in mind, for students by a student.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/collegedaddy-tech" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mugenkyou/College_daddy" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">College Daddy Home</a></li>
+                    <li><a href="../pages/cgpa.html">College Daddy CGPA Calculator</a></li>
+                    <li><a href="../pages/notes.html">College Daddy Notes</a></li>
+                    <li><a href="../pages/roadmap.html">College Daddy Roadmap</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSciD1CUiYUpiz4mtQSTYG9XeCRyG3CEhr9GNL03WxmRbFOgkw/viewform?usp=dialog" target="_blank" class="feedback-link">Send Feedback to College Daddy</a></p>
+                <p>Follow our journey on social media for updates and resources.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 College Daddy. All rights reserved. Developed by <span class="developer-name">Sachin</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../roadmap_assets/js/pomodoroStorage.js"></script>
+    <script src="../roadmap_assets/js/progress.js"></script>
+
+    <script>
+    // Mobile menu toggle
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuButton.addEventListener('click', () => {
+        menuButton.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!menuButton.contains(e.target) && !navLinks.contains(e.target)) {
+            menuButton.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+    </script>
+</body>
+</html>

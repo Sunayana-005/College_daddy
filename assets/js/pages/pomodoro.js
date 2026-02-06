@@ -10,6 +10,7 @@ class PomodoroTimer {
         this.pausedTime = null;
         this.setupElements();
         this.loadStoredSettings();
+        this.loadTodayProgress(); // NEW: Load today's progress data
         this.setupEventListeners();
         this.resetTimer();
         this.updateDisplay();
@@ -184,6 +185,25 @@ class PomodoroTimer {
         this.settingsPanel.classList.remove('show');
     }
 
+    // NEW METHOD: Load today's progress from storage
+    loadTodayProgress() {
+        try {
+            // Check if the storage utility exists
+            if (typeof getDateProgress === 'function') {
+                const today = new Date().toISOString().split('T')[0];
+                const todayData = getDateProgress(today);
+                
+                if (todayData) {
+                    this.completedPomodoros = todayData.completedPomodoros || 0;
+                    this.totalFocusTime = todayData.totalMinutes || 0;
+                    console.log('Loaded today\'s progress:', todayData);
+                }
+            }
+        } catch (e) {
+            console.log('Progress tracking not initialized yet');
+        }
+    }
+
     resetTimer() {
         clearInterval(this.interval);
         this.isRunning = false;
@@ -272,6 +292,9 @@ class PomodoroTimer {
             this.currentStreak++;
             this.updateStats();
 
+            // NEW: Save progress data for tracking
+            this.saveProgressData();
+
             if (this.completedPomodoros % this.settings.pomodorosUntilLongBreak === 0) {
                 this.currentPhase = 'longBreak';
                 this.remainingTime = this.settings.longBreak * 60 * 1000;
@@ -290,6 +313,19 @@ class PomodoroTimer {
         this.updatePhaseDisplay();
         this.playNotificationSound();
         this.showNotification(`${this.currentPhase === 'work' ? 'Work Time' : 'Break Time'} - Let's go!`);
+    }
+
+    // NEW METHOD: Save progress data
+    saveProgressData() {
+        try {
+            // Check if the storage utility exists
+            if (typeof saveTodayProgress === 'function') {
+                saveTodayProgress(this.completedPomodoros, this.totalFocusTime);
+                console.log('Progress saved:', this.completedPomodoros, 'pomodoros,', this.totalFocusTime, 'minutes');
+            }
+        } catch (e) {
+            console.error('Error saving progress:', e);
+        }
     }
 
     updateDisplay() {
@@ -525,4 +561,3 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.remove('timer-active');
     });
 });
-

@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
         <!-- Google tag (gtag.js) -->
@@ -17,6 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/pomodoro.css">
+    <link rel="stylesheet" href="../roadmap_assets/css/progress.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Theme initialization script - runs before page render to prevent flash -->
     <script>
@@ -29,6 +30,308 @@
         }
       })();
     </script>
+    <style>
+        /* FORCE VERTICAL STACKING - OVERRIDE ANY EXISTING CSS */
+        main {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        
+        /* ENSURE EACH SECTION IS FULL WIDTH AND STACKED */
+        main > * {
+            width: 100% !important;
+            display: block !important;
+        }
+        
+        /* Stats+Calendar side-by-side section */
+        .progress-tracking-wrapper {
+            width: 100%;
+            display: block;
+            clear: both;
+            margin-top: 60px;
+        }
+        
+        .progress-tracking-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            align-items: start;
+        }
+
+        /* ===== LEFT COLUMN: Today's Focus + Streaks ===== */
+        .stats-column {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .today-focus-card {
+            background: #181818;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .today-focus-card h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .today-focus-card h2 i {
+            color: #00b8ff;
+            font-size: 1.3rem;
+        }
+
+        .today-date {
+            color: #888888;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .focus-stats-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .focus-stat-card {
+            background: rgba(0, 157, 255, 0.08);
+            border: 1px solid rgba(0, 157, 255, 0.15);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .focus-stat-card:hover {
+            background: rgba(0, 157, 255, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .focus-stat-card .focus-icon {
+            font-size: 1.8rem;
+            color: #00b8ff;
+            margin-bottom: 10px;
+        }
+
+        .focus-stat-card .focus-label {
+            font-size: 0.85rem;
+            color: #888888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .focus-stat-card .focus-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00b8ff;
+        }
+
+        /* Streaks Card */
+        .streaks-card {
+            background: #181818;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .streaks-card h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .streaks-card h2 i {
+            color: #ffa500;
+            font-size: 1.3rem;
+        }
+
+        .streak-hint {
+            color: #888888;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.5;
+        }
+
+        .streak-hint i {
+            color: #ffa500;
+            font-size: 1rem;
+        }
+
+        .streak-stats-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .streak-stat-card {
+            background: rgba(255, 165, 0, 0.08);
+            border: 1px solid rgba(255, 165, 0, 0.15);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .streak-stat-card:hover {
+            background: rgba(255, 165, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .streak-stat-card .streak-icon {
+            font-size: 1.8rem;
+            color: #ffa500;
+            margin-bottom: 10px;
+        }
+
+        .streak-stat-card .streak-label {
+            font-size: 0.85rem;
+            color: #888888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .streak-stat-card .streak-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffa500;
+        }
+
+        /* Progress Bar Section */
+        .progress-bar-card {
+            background: #181818;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ===== RIGHT COLUMN: Calendar + Summary Stats ===== */
+        .calendar-column {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* Calendar Summary Stats below calendar */
+        .calendar-summary-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+
+        .summary-stat {
+            background: #181818;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 18px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .summary-stat:hover {
+            background: #1a1a1a;
+            border-color: rgba(0, 184, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .summary-stat .summary-label {
+            font-size: 0.8rem;
+            color: #888888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .summary-stat .summary-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #00b8ff;
+        }
+
+        /* Motivation Card */
+        .motivation-card {
+            background: linear-gradient(135deg, rgba(0, 184, 255, 0.1), rgba(0, 157, 255, 0.05));
+            border: 1px solid rgba(0, 184, 255, 0.2);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #ffffff;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Day Details */
+        .day-details {
+            background: rgba(0, 184, 255, 0.08);
+            border: 1px solid rgba(0, 184, 255, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .day-details h3 {
+            color: #00b8ff;
+            margin: 0 0 16px 0;
+            font-size: 1.15rem;
+        }
+
+        .detail-stats {
+            display: flex;
+            gap: 32px;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .detail-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00b8ff;
+        }
+
+        .detail-label {
+            font-size: 0.8rem;
+            color: #888888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .progress-tracking-section {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .calendar-summary-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
     </head>
 <body>
     
@@ -60,13 +363,12 @@
     </header>
 
     <main>
+        <!-- SECTION 1: TIMER + CONTROLS -->
         <div class="container">
-            <!-- Settings and Fullscreen Controls Container -->
+            <!-- Settings and Fullscreen Controls -->
             <div style="position: fixed; top: 80px; left: 20px; display: flex; gap: 10px; z-index: 1000;">
-                <!-- Settings Icon -->
                 <div class="settings-icon" id="settings-icon" style="cursor: pointer;"></div>
                 
-                <!-- Fullscreen Button -->
                 <button id="fullscreenBtn" style="
                     padding: 8px 8px;
                     background-color: #000000;
@@ -91,7 +393,6 @@
 
             <!-- Settings Panel -->
             <div class="settings-panel" id="settings-panel">
-                <!-- Your existing settings panel content -->
                 <div class="settings-grid">
                     <div class="settings-group">
                         <label class="settings-label">Work Duration (minutes)</label>
@@ -113,7 +414,7 @@
                 <button class="btn" id="apply-settings">Apply Settings</button>
             </div>
 
-            <!-- Timer Container -->
+            <!-- Timer -->
             <div class="timer-container">
                 <div class="timer-circle">
                     <svg class="progress-ring" width="70%" height="70%" viewBox="0 0 400 400">
@@ -138,47 +439,193 @@
                 </div>
             </div>
 
-            <!-- Rest of your existing content -->
+            <!-- Controls -->
             <div class="controls">
                 <button class="btn" id="start">Start</button>
                 <button class="btn" id="skip">Skip Phase</button>
                 <button class="btn" id="reset">Reset</button>
             </div>
+        </div>
 
+        <!-- SECTION 2: STUDY MUSIC -->
+        <div class="container">
             <div class="music-section">
                 <h2 class="music-title">Study Music</h2>
                 
                 <div class="music-controls">
                     <input type="text" placeholder="Enter YouTube URL" class="music-input" id="youtube-url">
                     <button class="btn" id="add-youtube">Load Music</button>
-                    
                 </div>
                 <div class="youtube-container"></div>
             </div>
-            
-            <div class="stats-panel">
-                <h2 class="stats-title">Today's Progress</h2>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value" id="completed-pomodoros">0</div>
-                        <div class="stat-label">Completed Pomodoros</div>
+        </div>
+
+        <!-- SECTION 3: REDESIGNED STATS + CALENDAR -->
+        <div class="progress-tracking-wrapper">
+            <div class="progress-tracking-section">
+                <!-- LEFT COLUMN: Today's Focus + Streaks -->
+                <div class="stats-column">
+                    
+                    <!-- Today's Focus Card -->
+                    <div class="today-focus-card">
+                        <h2><i class="fas fa-clock"></i> Today's Focus</h2>
+                        <div class="today-date" id="todayDate"></div>
+                        <div class="focus-stats-row">
+                            <div class="focus-stat-card">
+                                <div class="focus-icon"><i class="fas fa-clock"></i></div>
+                                <div class="focus-label">Focus Time</div>
+                                <div class="focus-value" id="totalFocusTime">0m</div>
+                            </div>
+                            <div class="focus-stat-card">
+                                <div class="focus-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="focus-label">Sessions</div>
+                                <div class="focus-value" id="totalPomodoros">0</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value" id="total-focus-time">0</div>
-                        <div class="stat-label">Total Focus Time (min)</div>
+
+                    <!-- Streaks Card -->
+                    <div class="streaks-card">
+                        <h2><i class="fas fa-fire"></i> Streaks</h2>
+                        <div class="streak-hint">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Keep studying daily to maintain your streak!</span>
+                        </div>
+                        <div class="streak-stats-row">
+                            <div class="streak-stat-card">
+                                <div class="streak-icon"><i class="fas fa-fire"></i></div>
+                                <div class="streak-label">Current Streak</div>
+                                <div class="streak-value" id="currentStreak">0 days</div>
+                            </div>
+                            <div class="streak-stat-card">
+                                <div class="streak-icon"><i class="fas fa-trophy"></i></div>
+                                <div class="streak-label">Best Streak</div>
+                                <div class="streak-value" id="bestStreak">0 days</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value" id="current-streak">0</div>
-                        <div class="stat-label">Current Streak</div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-bar-card">
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span>Monthly Progress</span>
+                                <span class="progress-percent" id="progressPercent">0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Motivation Message -->
+                    <div class="motivation-card" id="motivationCard" style="display: none;">
+                        <i class="fas fa-sparkles"></i>
+                        <span id="motivationText"></span>
+                    </div>
+
+                    <!-- Day Details -->
+                    <div class="day-details" id="dayDetails" style="display: none;">
+                        <h3 id="selectedDate"></h3>
+                        <div class="detail-stats">
+                            <div class="detail-item">
+                                <span class="detail-value" id="detailPomodoros">0</span>
+                                <span class="detail-label">Pomodoros</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-value" id="detailMinutes">0</span>
+                                <span class="detail-label">Minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Calendar + Summary -->
+                <div class="calendar-column">
+                    <div class="calendar-card">
+                        <div class="calendar-header">
+                            <button class="month-nav" onclick="changeMonth(-1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <h2 id="monthYear"></h2>
+                            <button class="month-nav" onclick="changeMonth(1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="calendar-weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+
+                        <div class="calendar-grid" id="calendarGrid"></div>
+
+                        <div class="calendar-legend">
+                            <span>Less</span>
+                            <div class="legend-colors">
+                                <div class="legend-box intensity-0"></div>
+                                <div class="legend-box intensity-1"></div>
+                                <div class="legend-box intensity-2"></div>
+                                <div class="legend-box intensity-3"></div>
+                                <div class="legend-box intensity-4"></div>
+                            </div>
+                            <span>More</span>
+                        </div>
+                    </div>
+
+                    <!-- Summary Stats Below Calendar -->
+                    <div class="calendar-summary-row">
+                        <div class="summary-stat">
+                            <div class="summary-label">Days Focused</div>
+                            <div class="summary-value" id="daysFocused">0 / 28</div>
+                        </div>
+                        <div class="summary-stat">
+                            <div class="summary-label">Avg Focus/Day</div>
+                            <div class="summary-value" id="avgFocusTime">0m</div>
+                        </div>
+                        <div class="summary-stat">
+                            <div class="summary-label">Total Focus</div>
+                            <div class="summary-value" id="totalFocusDisplay">0h</div>
+                        </div>
                     </div>
                 </div>
             </div>
-             <!-- Related Tools Section -->
-  
-             
+        </div>
+
+        <!-- SECTION 4: DATA MANAGEMENT -->
+        <div class="container">
+            <div class="data-management" style="margin-top: 30px;">
+                <h3><i class="fas fa-database"></i> Data Management</h3>
+                <p class="management-desc">Your data is stored locally in your browser. Export for backup or clear to start fresh.</p>
+                
+                <div class="management-buttons">
+                    <button class="mgmt-btn export" onclick="exportProgressData()">
+                        <i class="fas fa-download"></i> Export Data
+                    </button>
+                    <label class="mgmt-btn import">
+                        <i class="fas fa-upload"></i> Import Data
+                        <input type="file" id="importFile" accept=".json" onchange="importProgressData(event)" style="display: none;">
+                    </label>
+                    <button class="mgmt-btn clear" onclick="clearProgressData()">
+                        <i class="fas fa-trash"></i> Clear All Data
+                    </button>
+                </div>
+
+                <div class="data-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Data is stored locally in your browser. Clearing browser data will remove your progress history.</span>
+                </div>
+            </div>
+        </div>
     
     </main>
     
+    <!-- FOOTER -->
     <footer class="footer">
             <div class="footer-content">
                 <div class="footer-section">
@@ -209,8 +656,7 @@
                 <div class="footer-section">
                     <h3>Connect</h3>
                     <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSciD1CUiYUpiz4mtQSTYG9XeCRyG3CEhr9GNL03WxmRbFOgkw/viewform?usp=dialog" target="_blank" class="feedback-link">Send Feedback to College Daddy</a></p>
-                    <p><!-- Follow our journey on <a href="https://www.linkedin.com/company/collegedaddy-tech/" target="_blank" style="color: var(--primary-color); text-decoration: none;">LinkedIn</a> for updates and resources. -->
-                    Follow our journey on social media for updates and resources.</p>
+                    <p>Follow our journey on social media for updates and resources.</p>
                 </div>
             </div>
             
@@ -224,7 +670,6 @@
         const btn = document.getElementById('fullscreenBtn');
         const icon = document.getElementById('fullscreenIcon');
 
-        // Add hover effects
         btn.addEventListener('mouseover', () => {
             btn.style.backgroundColor = '#1976D2';
             btn.style.transform = 'translateY(-2px)';
@@ -267,32 +712,50 @@
         document.addEventListener('fullscreenchange', updateButtonText);
     </script>
 
+    <!-- Progress tracking scripts -->
+    <script src="../roadmap_assets/js/pomodoroStorage.js"></script>
+    <script src="../roadmap_assets/js/progress.js"></script>
     <script src="../assets/js/pages/pomodoro.js"></script>
 
     <script>
-    // Get the necessary elements
+    // Mobile menu
     const menuButton = document.querySelector('.menu-button');
     const navLinks = document.querySelector('.nav-links');
 
-    // Toggle menu when button is clicked
     menuButton.addEventListener('click', () => {
-        // Toggle the active class on both the button and nav links
         menuButton.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
 
-    // Close menu when clicking outside (optional, but recommended)
     document.addEventListener('click', (e) => {
         if (!menuButton.contains(e.target) && !navLinks.contains(e.target)) {
             menuButton.classList.remove('active');
             navLinks.classList.remove('active');
         }
     });
+    
+    // Function wrappers
+    function exportProgressData() {
+        exportData();
+    }
+    
+    function importProgressData(event) {
+        importDataFile(event);
+    }
+    
+    function clearProgressData() {
+        clearAllData();
+    }
+
+    // Set today's date display
+    document.addEventListener('DOMContentLoaded', function() {
+        const todayEl = document.getElementById('todayDate');
+        if (todayEl) {
+            const now = new Date();
+            const options = { weekday: 'long', month: 'long', day: 'numeric' };
+            todayEl.textContent = now.toLocaleDateString('en-US', options);
+        }
+    });
     </script>
 </body>
 </html>
-
-
-
-
-

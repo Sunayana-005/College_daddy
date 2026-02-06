@@ -1,0 +1,629 @@
+/*progress tracker */
+
+/* Main Container */
+.progress-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: calc(100vh - 200px);
+    color: #ffffff;
+}
+
+/* Page Header */
+.progress-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.progress-header h1 {
+    font-size: 2.5rem;
+    color: #00b8ff;
+    margin-bottom: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.progress-header h1 i {
+    font-size: 2.25rem;
+}
+
+.progress-header .subtitle {
+    color: #888888;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+/* Tab Navigation */
+.tab-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    background: #0a0a0a;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 14px 24px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #888888;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tab-btn:hover {
+    background: rgba(0, 184, 255, 0.1);
+    color: #00b8ff;
+}
+
+.tab-btn.active {
+    background: rgba(0, 184, 255, 0.15);
+    color: #00b8ff;
+    border: 1px solid rgba(0, 184, 255, 0.3);
+}
+
+.tab-btn i {
+    font-size: 1.125rem;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Statistics Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.stat-card:hover {
+    background: #1a1a1a;
+    border-color: rgba(0, 184, 255, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 157, 255, 0.3);
+}
+
+.stat-card.highlight {
+    border-color: rgba(255, 187, 53, 0.3);
+}
+
+.stat-card.highlight:hover {
+    border-color: rgba(255, 187, 53, 0.5);
+    box-shadow: 0 8px 24px rgba(255, 187, 53, 0.3);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: #00b8ff;
+    min-width: 50px;
+    text-align: center;
+}
+
+.stat-card.highlight .stat-icon {
+    color: #ffbb35;
+}
+
+.stat-info {
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00b8ff;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.stat-card.highlight .stat-value {
+    color: #ffbb35;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* Progress Section */
+.progress-section {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.progress-percent {
+    color: #00b8ff;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #0a0a0a;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #009dff, #00b8ff, #00d4ff);
+    border-radius: 7px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 12px rgba(0, 184, 255, 0.5);
+}
+
+/* Motivation Card */
+.motivation-card {
+    background: linear-gradient(135deg, rgba(0, 184, 255, 0.1), rgba(0, 157, 255, 0.1));
+    border: 1px solid rgba(0, 184, 255, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.motivation-card i {
+    font-size: 1.75rem;
+    color: #00b8ff;
+}
+
+/* Calendar Card */
+.calendar-card {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.calendar-header h2 {
+    color: #00b8ff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.month-nav {
+    background: rgba(0, 184, 255, 0.1);
+    border: 1px solid rgba(0, 184, 255, 0.3);
+    color: #00b8ff;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.125rem;
+}
+
+.month-nav:hover {
+    background: rgba(0, 184, 255, 0.2);
+    border-color: #00b8ff;
+    transform: scale(1.05);
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #888888;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    color: #ffffff;
+    position: relative;
+}
+
+.calendar-day:not(.empty):hover {
+    transform: scale(1.1);
+    border-color: #00b8ff;
+    z-index: 10;
+}
+
+.calendar-day.empty {
+    background: transparent;
+    cursor: default;
+}
+
+.calendar-day.intensity-0 {
+    background: #0a0a0a;
+}
+
+.calendar-day.intensity-1 {
+    background: rgba(0, 157, 255, 0.2);
+}
+
+.calendar-day.intensity-2 {
+    background: rgba(0, 184, 255, 0.4);
+}
+
+.calendar-day.intensity-3 {
+    background: rgba(0, 212, 255, 0.6);
+}
+
+.calendar-day.intensity-4 {
+    background: rgba(0, 212, 255, 0.8);
+}
+
+.calendar-day.today {
+    border-color: #ffbb35 !important;
+    box-shadow: 0 0 0 2px rgba(255, 187, 53, 0.3);
+}
+
+.calendar-legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+.legend-colors {
+    display: flex;
+    gap: 6px;
+}
+
+.legend-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+}
+
+/* Day Details */
+.day-details {
+    background: rgba(0, 184, 255, 0.1);
+    border: 1px solid rgba(0, 184, 255, 0.3);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.day-details h3 {
+    color: #00b8ff;
+    margin: 0 0 20px 0;
+    font-size: 1.25rem;
+}
+
+.detail-stats {
+    display: flex;
+    gap: 32px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00b8ff;
+}
+
+.detail-label {
+    font-size: 0.875rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Data Management */
+.data-management {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.data-management h3 {
+    color: #00b8ff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.management-desc {
+    color: #888888;
+    margin: 0 0 24px 0;
+    font-size: 0.95rem;
+}
+
+.management-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.mgmt-btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: 1px solid;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mgmt-btn.export {
+    background: rgba(37, 211, 102, 0.1);
+    border-color: rgba(37, 211, 102, 0.3);
+    color: #25D366;
+}
+
+.mgmt-btn.export:hover {
+    background: rgba(37, 211, 102, 0.2);
+    border-color: #25D366;
+    transform: translateY(-2px);
+}
+
+.mgmt-btn.import {
+    background: rgba(0, 184, 255, 0.1);
+    border-color: rgba(0, 184, 255, 0.3);
+    color: #00b8ff;
+    cursor: pointer;
+}
+
+.mgmt-btn.import:hover {
+    background: rgba(0, 184, 255, 0.2);
+    border-color: #00b8ff;
+    transform: translateY(-2px);
+}
+
+.mgmt-btn.clear {
+    background: rgba(255, 68, 68, 0.1);
+    border-color: rgba(255, 68, 68, 0.3);
+    color: #ff4444;
+}
+
+.mgmt-btn.clear:hover {
+    background: rgba(255, 68, 68, 0.2);
+    border-color: #ff4444;
+    transform: translateY(-2px);
+}
+
+.data-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: rgba(0, 184, 255, 0.1);
+    border: 1px solid rgba(0, 184, 255, 0.3);
+    border-radius: 10px;
+    color: #888888;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.data-notice i {
+    color: #00b8ff;
+    font-size: 1.125rem;
+    margin-top: 2px;
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info-card:hover {
+    background: #1a1a1a;
+    border-color: rgba(0, 184, 255, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 157, 255, 0.3);
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: #00b8ff;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.info-card h4 {
+    color: #00b8ff;
+    font-size: 1.125rem;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.info-card p {
+    color: #888888;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progress-container {
+        padding: 24px 16px;
+    }
+
+    .progress-header h1 {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tab-container {
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-icon {
+        font-size: 2rem;
+    }
+
+    .stat-value {
+        font-size: 1.75rem;
+    }
+
+    .calendar-card {
+        padding: 20px;
+    }
+
+    .calendar-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .month-nav {
+        width: 36px;
+        height: 36px;
+    }
+
+    .calendar-day {
+        font-size: 0.8rem;
+    }
+
+    .management-buttons {
+        flex-direction: column;
+    }
+
+    .mgmt-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .progress-header .subtitle {
+        font-size: 1rem;
+    }
+
+    .stats-grid {
+        gap: 16px;
+    }
+
+    .data-management {
+        padding: 20px;
+    }
+}

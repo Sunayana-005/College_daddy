@@ -135,8 +135,8 @@ body {
 .timer-container {
     position: relative;
     margin-top: 0;
-    width: min(80vw, 400px);
-    height: min(80vw, 400px);
+    width: min(80vw, 500px);
+    height: min(80vw, 500px);
     /
 }
 
@@ -253,14 +253,18 @@ body {
     padding: 8rem 1.5rem 1.5rem;
     margin-top: 4rem;
 }
+
+/* FIX 3: Controls - all buttons on one line, shifted slightly left to center under timer */
 .controls {
     position: relative;
-    top: 0cm;
+    top: 0;
     display: flex;
     gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
+    margin: 1rem auto;
+    flex-wrap: nowrap;
     justify-content: center;
+    width: 100%;
+    transform: translateX(-140px);
 }
 
 .btn {
@@ -288,6 +292,7 @@ body {
     cursor: not-allowed;
 }
 
+/* FIX 1: Music section - changed top:4cm to margin-top:4cm so it pushes content below */
 .music-section {
     width: 100%;
     max-width: 600px;
@@ -295,7 +300,8 @@ body {
     border-radius: 10px;
     padding: 2rem;
     position: relative;
-    top: 4cm; /* Moves it down exactly 4cm */
+    top: 0;
+    margin-top: 4cm;
 }
 
 .music-title {
@@ -340,15 +346,16 @@ body {
     border-radius: 5px;
 }
 
+/* FIX 2: Stats panel - changed top:4cm to margin-top:4cm so it pushes content below */
 .stats-panel {
     width: 100%;
     max-width: 600px;
     background: var(--card-bg);
     border-radius: 10px;
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 4cm;
     position: relative;
-    top: 4cm;
+    top: 0;
 }
 
 .stats-title {
@@ -842,5 +849,3 @@ html {
     z-index: 5;
     position: relative;
 }
-
-
