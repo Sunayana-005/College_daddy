@@ -232,6 +232,10 @@ def serve_assets(filename):
 def serve_data(filename):
     return send_from_directory('data', filename)
 
+@app.route('/roadmap_assets/<path:filename>')
+def serve_roadmap_assets(filename):
+    return send_from_directory('roadmap_assets', filename)
+
 if __name__ == '__main__':
     # Start file watcher
     start_file_watcher()
