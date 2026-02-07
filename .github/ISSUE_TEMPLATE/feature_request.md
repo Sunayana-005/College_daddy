@@ -2,7 +2,7 @@
 name: "Feature Request"
 about: Suggest a new feature or enhancement for College Daddy
 title: "[Feature]: "
-labels:["enhancement", "apertre3.0"]
+labels: ["enhancement", "apertre3.0"]
 assignees: ""
 ---
 
@@ -22,4 +22,3 @@ Add screenshots, sketches, or references if relevant.
 - [ ] I've checked this doesn't already exist.
 - [ ] I've followed the contributing guidelines.
 - [ ] I've described the expected behavior clearly.
-
