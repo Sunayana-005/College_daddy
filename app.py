@@ -44,7 +44,7 @@ def stop_file_watcher():
         logger.info("File watcher stopped")
 
 # Register cleanup function
-atexit.register(stop_file_watcher)
+# atexit.register(stop_file_watcher)
 
 @app.route('/')
 def home():
@@ -237,8 +237,9 @@ def serve_roadmap_assets(filename):
     return send_from_directory('roadmap_assets', filename)
 
 if __name__ == '__main__':
-    # Start file watcher
-    start_file_watcher()
+    # Start file watcher only in the reloader process
+    if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+        start_file_watcher()
     
     try:
         app.run(debug=True)
