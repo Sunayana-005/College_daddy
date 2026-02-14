@@ -1,0 +1,90 @@
+    .events-section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .events-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .events-subtitle {
+      text-align: center;
+      opacity: 0.8;
+      margin-bottom: 2rem;
+    }
+
+    .event-filters {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .event-filters button {
+      margin: 0 8px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      background: var(--card-bg, #1e293b);
+      color: white;
+    }
+
+    .event-filters button.active {
+      background: var(--primary-color);
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .event-card {
+      background: var(--card-bg, #1e293b);
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .event-platform {
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .event-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 8px 0;
+    }
+
+    .event-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      margin-top: 8px;
+    }
+
+    .ongoing { background: #16a34a; }
+    .upcoming { background: #f59e0b; }
+    .ended { background: #dc2626; }
+
+    .countdown {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    .event-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+    }
